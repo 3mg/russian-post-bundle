@@ -1,0 +1,3 @@
+a3mg\RussianPostBundle\Model\Envelope:
+    xml_root_name: Envelope
+    xml_root_namespace: 'http://schemas.xmlsoap.org/soap/envelope/'

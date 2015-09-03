@@ -1,0 +1,52 @@
+a3mg\RussianPostBundle\Model\OperationHistoryRecordType:
+    properties:
+        addressParameters:
+            expose: true
+            access_type: public_method
+            serialized_name: AddressParameters
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getAddressParameters
+                setter: setAddressParameters
+            type: a3mg\RussianPostBundle\Model\AddressParametersType
+        financeParameters:
+            expose: true
+            access_type: public_method
+            serialized_name: FinanceParameters
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getFinanceParameters
+                setter: setFinanceParameters
+            type: a3mg\RussianPostBundle\Model\FinanceParametersType
+        itemParameters:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemParameters
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getItemParameters
+                setter: setItemParameters
+            type: a3mg\RussianPostBundle\Model\ItemParametersType
+        operationParameters:
+            expose: true
+            access_type: public_method
+            serialized_name: OperationParameters
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getOperationParameters
+                setter: setOperationParameters
+            type: a3mg\RussianPostBundle\Model\OperationParametersType
+        userParameters:
+            expose: true
+            access_type: public_method
+            serialized_name: UserParameters
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getUserParameters
+                setter: setUserParameters
+            type: a3mg\RussianPostBundle\Model\UserParametersType

@@ -1,20 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: nickolay
- * Date: 03.09.15
- * Time: 12:24
- */
 
 namespace a3mg\RussianPostBundle\Tests;
 
-
 use a3mg\RussianPostBundle\Exception\InvalidTrackException;
+use a3mg\RussianPostBundle\Exception\RussianPostApiException;
+use a3mg\RussianPostBundle\Model\OperationHistoryData;
 use a3mg\RussianPostBundle\Service\RussianPostApi;
 use a3mg\RussianPostBundle\Service\RussianPostApiFactory;
 use a3mg\RussianPostBundle\Validator\TrackValidator;
 
-class Test extends \PHPUnit_Framework_TestCase
+class StandaloneTest extends \PHPUnit_Framework_TestCase
 {
     public function testTrackValidation()
     {

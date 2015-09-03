@@ -1,0 +1,6 @@
+vendor
+composer.phar
+composer.lock
+wsdlcache-*
+Tests/app/cache/
+Tests/app/logs/

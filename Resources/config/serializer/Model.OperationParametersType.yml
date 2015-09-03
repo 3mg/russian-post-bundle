@@ -1,0 +1,32 @@
+a3mg\RussianPostBundle\Model\OperationParametersType:
+    properties:
+        operType:
+            expose: true
+            access_type: public_method
+            serialized_name: OperType
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getOperType
+                setter: setOperType
+            type: a3mg\RussianPostBundle\Model\Rtm02ParameterType
+        operAttr:
+            expose: true
+            access_type: public_method
+            serialized_name: OperAttr
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getOperAttr
+                setter: setOperAttr
+            type: a3mg\RussianPostBundle\Model\Rtm02ParameterType
+        operDate:
+            expose: true
+            access_type: public_method
+            serialized_name: OperDate
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getOperDate
+                setter: setOperDate
+            type: Goetas\Xsd\XsdToPhp\XMLSchema\DateTime

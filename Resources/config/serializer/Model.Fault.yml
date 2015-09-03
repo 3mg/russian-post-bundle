@@ -1,0 +1,3 @@
+a3mg\RussianPostBundle\Model\Fault:
+    xml_root_name: Fault
+    xml_root_namespace: 'http://schemas.xmlsoap.org/soap/envelope/'

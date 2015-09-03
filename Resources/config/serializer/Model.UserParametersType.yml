@@ -1,0 +1,32 @@
+a3mg\RussianPostBundle\Model\UserParametersType:
+    properties:
+        sendCtg:
+            expose: true
+            access_type: public_method
+            serialized_name: SendCtg
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getSendCtg
+                setter: setSendCtg
+            type: a3mg\RussianPostBundle\Model\Rtm02ParameterType
+        sndr:
+            expose: true
+            access_type: public_method
+            serialized_name: Sndr
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getSndr
+                setter: setSndr
+            type: string
+        rcpn:
+            expose: true
+            access_type: public_method
+            serialized_name: Rcpn
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getRcpn
+                setter: setRcpn
+            type: string

@@ -1,0 +1,122 @@
+a3mg\RussianPostBundle\Model\ItemParametersType:
+    properties:
+        barcode:
+            expose: true
+            access_type: public_method
+            serialized_name: Barcode
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getBarcode
+                setter: setBarcode
+            type: string
+        internum:
+            expose: true
+            access_type: public_method
+            serialized_name: Internum
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getInternum
+                setter: setInternum
+            type: string
+        validRuType:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidRuType
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getValidRuType
+                setter: setValidRuType
+            type: boolean
+        validEnType:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidEnType
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getValidEnType
+                setter: setValidEnType
+            type: boolean
+        complexItemName:
+            expose: true
+            access_type: public_method
+            serialized_name: ComplexItemName
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getComplexItemName
+                setter: setComplexItemName
+            type: string
+        mailRank:
+            expose: true
+            access_type: public_method
+            serialized_name: MailRank
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getMailRank
+                setter: setMailRank
+            type: a3mg\RussianPostBundle\Model\Rtm02ParameterType
+        postMark:
+            expose: true
+            access_type: public_method
+            serialized_name: PostMark
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getPostMark
+                setter: setPostMark
+            type: a3mg\RussianPostBundle\Model\Rtm02ParameterType
+        mailType:
+            expose: true
+            access_type: public_method
+            serialized_name: MailType
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getMailType
+                setter: setMailType
+            type: a3mg\RussianPostBundle\Model\Rtm02ParameterType
+        mailCtg:
+            expose: true
+            access_type: public_method
+            serialized_name: MailCtg
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getMailCtg
+                setter: setMailCtg
+            type: a3mg\RussianPostBundle\Model\Rtm02ParameterType
+        mass:
+            expose: true
+            access_type: public_method
+            serialized_name: Mass
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getMass
+                setter: setMass
+            type: integer
+        maxMassRU:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxMassRU
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getMaxMassRU
+                setter: setMaxMassRU
+            type: integer
+        maxMassEN:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxMassEN
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getMaxMassEN
+                setter: setMaxMassEN
+            type: integer

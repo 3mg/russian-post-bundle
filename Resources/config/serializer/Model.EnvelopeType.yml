@@ -1,0 +1,22 @@
+a3mg\RussianPostBundle\Model\EnvelopeType:
+    properties:
+        header:
+            expose: true
+            access_type: public_method
+            serialized_name: Header
+            xml_element:
+                namespace: 'http://schemas.xmlsoap.org/soap/envelope/'
+            accessor:
+                getter: getHeader
+                setter: setHeader
+            type: a3mg\RussianPostBundle\Model\Header
+        body:
+            expose: true
+            access_type: public_method
+            serialized_name: Body
+            xml_element:
+                namespace: 'http://schemas.xmlsoap.org/soap/envelope/'
+            accessor:
+                getter: getBody
+                setter: setBody
+            type: a3mg\RussianPostBundle\Model\Body

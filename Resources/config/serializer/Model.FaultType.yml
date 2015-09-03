@@ -1,0 +1,42 @@
+a3mg\RussianPostBundle\Model\FaultType:
+    properties:
+        faultcode:
+            expose: true
+            access_type: public_method
+            serialized_name: faultcode
+            xml_element:
+                namespace: 'http://schemas.xmlsoap.org/soap/envelope/'
+            accessor:
+                getter: getFaultcode
+                setter: setFaultcode
+            type: string
+        faultstring:
+            expose: true
+            access_type: public_method
+            serialized_name: faultstring
+            xml_element:
+                namespace: 'http://schemas.xmlsoap.org/soap/envelope/'
+            accessor:
+                getter: getFaultstring
+                setter: setFaultstring
+            type: string
+        faultactor:
+            expose: true
+            access_type: public_method
+            serialized_name: faultactor
+            xml_element:
+                namespace: 'http://schemas.xmlsoap.org/soap/envelope/'
+            accessor:
+                getter: getFaultactor
+                setter: setFaultactor
+            type: string
+        detail:
+            expose: true
+            access_type: public_method
+            serialized_name: detail
+            xml_element:
+                namespace: 'http://schemas.xmlsoap.org/soap/envelope/'
+            accessor:
+                getter: getDetail
+                setter: setDetail
+            type: a3mg\RussianPostBundle\Model\DetailType

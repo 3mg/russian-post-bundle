@@ -1,0 +1,12 @@
+framework:
+    translator:      { fallback: "en" }
+    secret:          "no_secrets"
+    
+#jms_serializer:
+#    metadata:
+#        auto_detection: true
+        
+a3mg_russian_post:
+    login: admin
+    password: adminpass
+    

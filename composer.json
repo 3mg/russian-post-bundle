@@ -1,43 +1,58 @@
 {
     "name" : "3mg/russian-post-bundle",
-    "description" : "Api для работы с сервисом отслеживания Почты России",
+    "description" : "Бандл для работы с сервисом отслеживания Почты России",
     "keywords" : [
         "russian post"
     ],
     "homepage" : "https://github.com/3mg/russian-post-bundle",
     "license" : "MIT",
     "authors" : [{
-            "name" : "Nikolay Savchenko",
+            "name" : "Nickolay Savchenko",
             "email" : "3mg@bk.ru"
         }
     ],
     "require": {
-        "symfony/intl": "^2.7",
-        "jms/serializer": "~0.11",
-        "fergusean/nusoap": "^0.9.5",
+        "symfony/intl": "~2.7",
+        "jms/serializer": "~1.0",
+        "3mg/nusoap": "master",
+        "goetas/xsd2php":"2.*@dev",
         "goetas/xsd-reader":"2.*@dev"
     },
+    "require-dev":{
+        "phpunit/phpunit": "~4.0",
+        "symfony/symfony": "~2.7",
+        "jms/serializer-bundle": "~1.0"
+    },
     "suggest": {
-        "jms/serializer-bundle": "For using as symfony bundle"
+        "jms/serializer-bundle": "For using as symfony bundle",
+        "ocramius/proxy-manager": "For lazy services"
     },
     "repositories": [
         {
           "type": "git",
-          "url": "https://github.com/3mg/nusoap"
+          "url": "https://github.com/goetas/xsd-reader"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/goetas/xsd2php"
         }
     ],
     "autoload" : {
         "psr-4" : {
-            "a3mg\\RussianPostBundle" : "/"
+            "a3mg\\RussianPostBundle\\" : "."
+        },
+        "psr-0" : {
+            "" : "./Tests/app"
         }
     },
     "scripts": {
-        "build": "xsd2php convert:php 'Resources/xml/russian_post.xsd' --ns-map='http://russianpost.org/operationhistory/data;a3mg/RussianPostBundle/Model/' --ns-dest='a3mg/RussianPostBundle/Model/;Model' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/'",
-        "build_metadata": "xsd2php convert:jms-yaml 'Resources/xml/russian_post.xsd' --ns-map='http://russianpost.org/operationhistory/dataa3mg/RussianPostBundle/Model/' --ns-dest='a3mg/RussianPostBundle/Model/;Resources/config/serializer' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/'"
+        "build_rus_post": "xsd2php convert:php 'Resources/xml/russian_post.xsd' --ns-map='http://russianpost.org/operationhistory/data;a3mg/RussianPostBundle/Model/' --ns-dest='a3mg/RussianPostBundle/Model/;Model' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/'",
+        "build_rus_post_metadata": "xsd2php convert:jms-yaml 'Resources/xml/russian_post.xsd' --ns-map='http://russianpost.org/operationhistory/data;a3mg/RussianPostBundle/Model/' --ns-dest='a3mg/RussianPostBundle/;Resources/config/serializer' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/'"
     },
+    "minimum-stability": "dev",
     "extra" : {
         "branch-alias" : {
-            "dev-master" : "0.1-dev"
+            "dev-master" : "master"
         }
     }
 }

@@ -1,0 +1,52 @@
+a3mg\RussianPostBundle\Model\AddressParametersType:
+    properties:
+        destinationAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: DestinationAddress
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getDestinationAddress
+                setter: setDestinationAddress
+            type: a3mg\RussianPostBundle\Model\AddressType
+        operationAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: OperationAddress
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getOperationAddress
+                setter: setOperationAddress
+            type: a3mg\RussianPostBundle\Model\AddressType
+        mailDirect:
+            expose: true
+            access_type: public_method
+            serialized_name: MailDirect
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getMailDirect
+                setter: setMailDirect
+            type: a3mg\RussianPostBundle\Model\CountryType
+        countryFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: CountryFrom
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getCountryFrom
+                setter: setCountryFrom
+            type: a3mg\RussianPostBundle\Model\CountryType
+        countryOper:
+            expose: true
+            access_type: public_method
+            serialized_name: CountryOper
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getCountryOper
+                setter: setCountryOper
+            type: a3mg\RussianPostBundle\Model\CountryType

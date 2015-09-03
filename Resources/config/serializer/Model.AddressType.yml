@@ -1,0 +1,22 @@
+a3mg\RussianPostBundle\Model\AddressType:
+    properties:
+        index:
+            expose: true
+            access_type: public_method
+            serialized_name: Index
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getIndex
+                setter: setIndex
+            type: string
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            type: string

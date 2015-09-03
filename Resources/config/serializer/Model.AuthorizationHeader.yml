@@ -1,0 +1,33 @@
+a3mg\RussianPostBundle\Model\AuthorizationHeader:
+    xml_root_name: AuthorizationHeader
+    xml_root_namespace: 'http://russianpost.org/operationhistory/data'
+    properties:
+        mustUnderstand:
+            expose: true
+            access_type: public_method
+            serialized_name: mustUnderstand
+            accessor:
+                getter: getMustUnderstand
+                setter: setMustUnderstand
+            xml_attribute: true
+            type: boolean
+        login:
+            expose: true
+            access_type: public_method
+            serialized_name: login
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getLogin
+                setter: setLogin
+            type: string
+        password:
+            expose: true
+            access_type: public_method
+            serialized_name: password
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getPassword
+                setter: setPassword
+            type: string

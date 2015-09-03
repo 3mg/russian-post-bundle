@@ -28,46 +28,20 @@ class RussianPostApi {
      * RussianPostApi constructor.
      *
      * @param SerializerInterface $serializer
-     * @param $wsdlEndpoint
-     * @param $fullName
-     * @param $shortName
-     * @param $fcindex
-     * @param $respMail
-     * @param $respPerson
-     * @param $inn
      * @param $login
      * @param $password
-     * @param $typeUsersId
-     * @param $url
+     * @param $wsdlEndpoint
      */
     public function __construct(
         $serializer,
         $login,
         $password,
-        $wsdlEndpoint,
-        $fullName = null,
-        $shortName = null,
-        $fcindex = null,
-        $respMail = null,
-        $respPerson = null,
-        $inn = null,
-        $typeUsersId = null,
-        $url = null
+        $wsdlEndpoint
     ) {
         $this->serializer = $serializer;
-
         $this->login = $login;
         $this->password = $password;
         $this->wsdlEndpoint = $wsdlEndpoint;
-
-        $this->fullName = $fullName;
-        $this->shortName = $shortName;
-        $this->fcindex = $fcindex;
-        $this->respMail = $respMail;
-        $this->respPerson = $respPerson;
-        $this->inn = $inn;
-        $this->typeUsersId = $typeUsersId;
-        $this->url = $url;
     }
 
     /**
@@ -90,8 +64,8 @@ class RussianPostApi {
         $AuthorizationHeader = [
             "mustUnderstand" => "TRUE",
             "_" => [
-                "login" => self::LOGIN,
-                "password" => self::PASSWORD,
+                "login" => $this->login,
+                "password" => $this->password,
             ],
         ];
         $historyRequest = [
@@ -107,9 +81,9 @@ class RussianPostApi {
         $result = $client->call('GetOperationHistory', $parameters, 'http://russianpost.org/operationhistory');
 
         $debug = array(
-            "Request" => htmlspecialchars($client->request, ENT_QUOTES),
-            "Response" => htmlspecialchars($client->response, ENT_QUOTES),
-            "Debug" => htmlspecialchars($client->debug_str, ENT_QUOTES),
+            "Request" => /*htmlspecialchars*/($client->request/*, ENT_QUOTES*/),
+            "Response" => /*htmlspecialchars*/($client->response/*, ENT_QUOTES*/),
+            "Debug" => /*htmlspecialchars*/($client->debug_str/*, ENT_QUOTES*/),
         );
 
         if ($client->fault) {
@@ -120,7 +94,11 @@ class RussianPostApi {
                 throw new RussianPostApiException($err);
             } else {
                 /** @var OperationHistoryData $object */
-                $object = $this->serializer->deserialize($result, 'RussianPost\Type\OperationHistoryData', 'array');
+                $object = $this->serializer->deserialize(
+                    $result,
+                    'a3mg\RussianPostBundle\Model\OperationHistoryData',
+                    'array'
+                );
                 return $object;
             }
         }

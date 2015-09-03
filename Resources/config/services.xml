@@ -4,17 +4,65 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <!--
     <parameters>
-        <parameter key="a3mg_russian_post.example.class">a3mg\RussianPostBundle\Example</parameter>
+        <!-- API classes -->
+        <parameter key="a3mg_russian_post.russian_post_api.class"
+                >a3mg\RussianPostBundle\Service\RussianPostApi</parameter>
+
+        <parameter key="a3mg_russian_post.russian_post_api_factory.class"
+                >a3mg\RussianPostBundle\Service\RussianPostApiFactory</parameter>
+
+        <!-- Serializer classes -->
+        <parameter key="a3mg_russian_post.handler.base_type_xml.class"
+                >Goetas\Xsd\XsdToPhp\Jms\Handler\BaseTypesHandler</parameter>
+
+        <parameter key="a3mg_russian_post.handler.date_xml.class"
+                >Goetas\Xsd\XsdToPhp\Jms\Handler\XmlSchemaDateHandler</parameter>
+
+        <parameter key="a3mg_russian_post.handler.date_array.class"
+                >a3mg\RussianPostBundle\Service\DateHandler</parameter>
+
+        <parameter key="a3mg_russian_post.array_deserialization_visitor.class"
+                >a3mg\RussianPostBundle\Service\ArrayDeserializationVisitor</parameter>
+
+        <!-- Bundle parameters -->
+        <parameter key="a3mg_russian_post.wsdl_endpoint"
+                >http://voh.russianpost.ru:8080/niips-operationhistory-web/OperationHistory?wsdl</parameter>
     </parameters>
 
     <services>
-        <service id="a3mg_russian_post.example" class="%a3mg_russian_post.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        <!-- Serializer services -->
+        <service id="a3mg_russian_post.array_deserialization_visitor"
+                 class="%a3mg_russian_post.array_deserialization_visitor.class%">
+            <argument type="service" id="jms_serializer.naming_strategy"/>
+            <argument type="service" id="jms_serializer.object_constructor"/>
+            <tag name="jms_serializer.deserialization_visitor" format="array"/>
         </service>
+
+        <service id="a3mg_russian_post.handler.base_type_xml"
+                 class="%a3mg_russian_post.handler.base_type_xml.class%">
+            <tag name="jms_serializer.subscribing_handler" />
+        </service>
+
+        <service id="a3mg_russian_post.handler.date_xml"
+                 class="%a3mg_russian_post.handler.date_xml.class%">
+            <tag name="jms_serializer.subscribing_handler" />
+        </service>
+
+        <service id="a3mg_russian_post.handler.date_array"
+                 class="%a3mg_russian_post.handler.date_array.class%">
+            <tag name="jms_serializer.subscribing_handler" />
+        </service>
+
+        <!-- API services -->
+        <service id="a3mg_russian_post.russian_post_api" class="%a3mg_russian_post.russian_post_api.class%" lazy="true">
+            <factory class="%a3mg_russian_post.russian_post_api_factory.class%" method="createApi" />
+            <argument/>
+            <argument/>
+            <argument/>
+            <argument type="service" id="jms_serializer"/>
+        </service>
+
+        <service id="russian_post_api" alias="a3mg_russian_post.russian_post_api"></service>
     </services>
-    -->
 </container>

@@ -1,0 +1,52 @@
+a3mg\RussianPostBundle\Model\CountryType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getId
+                setter: setId
+            type: integer
+        code2A:
+            expose: true
+            access_type: public_method
+            serialized_name: Code2A
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getCode2A
+                setter: setCode2A
+            type: string
+        code3A:
+            expose: true
+            access_type: public_method
+            serialized_name: Code3A
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getCode3A
+                setter: setCode3A
+            type: string
+        nameRU:
+            expose: true
+            access_type: public_method
+            serialized_name: NameRU
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getNameRU
+                setter: setNameRU
+            type: string
+        nameEN:
+            expose: true
+            access_type: public_method
+            serialized_name: NameEN
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getNameEN
+                setter: setNameEN
+            type: string

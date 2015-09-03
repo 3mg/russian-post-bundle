@@ -1,14 +1,14 @@
 RussianPost Bundle
-==============
+==================
 
-Api для работы с сервисом отслеживания Почты России.
-Работает как stand-alone и как symfony bundle.
+Библиотека для работы с сервисом отслеживания Почты России.
+Можно использовать standalone и как symfony bundle.
 
 
 Installation
 ------------
 
-There are two recommended ways to install the `xsd-reader` via [Composer](https://getcomposer.org/):
+There are two recommended ways to install the bundle via [Composer](https://getcomposer.org/):
 
 * using the ``composer require`` command:
 
@@ -25,6 +25,14 @@ composer require '3mg/russian-post-bundle:dev-master'
     ..
 }
 ```
+
+if it fails try add
+
+```js
+"minimum-stability": "dev",
+```
+
+        
 Using with symfony
 ------------------
 
@@ -35,19 +43,52 @@ new a3mg\RussianPostBundle\a3mgRussianPostBundle(),
 ...
 ```
 
-### add to parameters.yml
+### add to config.yml
+```yml
+...
+# a3mgRussianPostBundle
+a3mg_russian_post:
+    login: 'your_login'
+    password: 'your_password'
+...
+```
 
 ### get service
 
-$api = $this->container->get();
+```php
+$api = $this->container->get('russian_post_api');
+
+try {
+    /** @var \a3mg\RussianPostBundle\Model\OperationHistoryData $object */
+    $object = $api->getTrackOperationHistory("EE123456785KR");
+    ...
+} catch (\a3mg\RussianPostBundle\Exception\InvalidTrackException $e) {
+    ...
+} catch (\a3mg\RussianPostBundle\Exception\RussianPostApiException $e) {
+    ...
+}
+```
 
 Using stand alone
 -----------------
-See Tests\Test.php
+```php
+use a3mg\RussianPostBundle\Service\RussianPostApiFactory;
+...
+$api = RussianPostApiFactory::createApi("your_login", "your_password");
+try {
+    /** @var \a3mg\RussianPostBundle\Model\OperationHistoryData $object */
+    $object = $api->getTrackOperationHistory("EE123456785KR");
+    ...
+} catch (\a3mg\RussianPostBundle\Exception\InvalidTrackException $e) {
+    ...
+} catch (\a3mg\RussianPostBundle\Exception\RussianPostApiException $e) {
+    ...
+}
+```
 
 Dev only. Updating api model
 ----------------------------
 
-composer run-script build
-
-composer run-script build_metadata
+* composer install
+* composer run-script build_rus_post
+* composer run-script build_rus_post_metadata

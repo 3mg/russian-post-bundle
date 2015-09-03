@@ -1,0 +1,12 @@
+a3mg\RussianPostBundle\Model\AuthorizationFaultReason:
+    xml_root_name: AuthorizationFaultReason
+    xml_root_namespace: 'http://russianpost.org/operationhistory/data'
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string

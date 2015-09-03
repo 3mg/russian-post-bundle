@@ -1,0 +1,22 @@
+a3mg\RussianPostBundle\Model\Rtm02ParameterType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getId
+                setter: setId
+            type: integer
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
