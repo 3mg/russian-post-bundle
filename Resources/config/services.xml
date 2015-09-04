@@ -13,11 +13,11 @@
                 >a3mg\RussianPostBundle\Service\RussianPostApiFactory</parameter>
 
         <!-- Serializer classes -->
-        <parameter key="a3mg_russian_post.handler.base_type_xml.class"
+        <!--<parameter key="a3mg_russian_post.handler.base_type_xml.class"
                 >Goetas\Xsd\XsdToPhp\Jms\Handler\BaseTypesHandler</parameter>
 
         <parameter key="a3mg_russian_post.handler.date_xml.class"
-                >Goetas\Xsd\XsdToPhp\Jms\Handler\XmlSchemaDateHandler</parameter>
+                >Goetas\Xsd\XsdToPhp\Jms\Handler\XmlSchemaDateHandler</parameter>-->
 
         <parameter key="a3mg_russian_post.handler.date_array.class"
                 >a3mg\RussianPostBundle\Service\DateHandler</parameter>
@@ -39,7 +39,7 @@
             <tag name="jms_serializer.deserialization_visitor" format="array"/>
         </service>
 
-        <service id="a3mg_russian_post.handler.base_type_xml"
+        <!--<service id="a3mg_russian_post.handler.base_type_xml"
                  class="%a3mg_russian_post.handler.base_type_xml.class%">
             <tag name="jms_serializer.subscribing_handler" />
         </service>
@@ -47,7 +47,7 @@
         <service id="a3mg_russian_post.handler.date_xml"
                  class="%a3mg_russian_post.handler.date_xml.class%">
             <tag name="jms_serializer.subscribing_handler" />
-        </service>
+        </service>-->
 
         <service id="a3mg_russian_post.handler.date_array"
                  class="%a3mg_russian_post.handler.date_array.class%">

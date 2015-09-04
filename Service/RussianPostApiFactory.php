@@ -38,8 +38,8 @@ class RussianPostApiFactory {
         $serializerBuilder->addMetadataDir(__DIR__.'/../Resources/config/serializer', 'a3mg\RussianPostBundle');
         $serializerBuilder->configureHandlers(function (HandlerRegistryInterface $handler) use ($serializerBuilder) {
             $serializerBuilder->addDefaultHandlers();
-            $handler->registerSubscribingHandler(new BaseTypesHandler()); // XMLSchema List handling
-            $handler->registerSubscribingHandler(new XmlSchemaDateHandler()); // XMLSchema date handling
+            // $handler->registerSubscribingHandler(new BaseTypesHandler()); // XMLSchema List handling
+            // $handler->registerSubscribingHandler(new XmlSchemaDateHandler()); // XMLSchema date handling
             $handler->registerSubscribingHandler(new \a3mg\RussianPostBundle\Service\DateHandler()); // XMLSchema date handling
         });
         

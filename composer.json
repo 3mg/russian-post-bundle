@@ -14,14 +14,14 @@
     "require": {
         "symfony/intl": "~2.7",
         "jms/serializer": "~1.0",
-        "3mg/nusoap": "0.9.5",
-        "goetas/xsd2php":"2.*",
-        "goetas/xsd-reader":"2.*"
+        "3mg/nusoap": "0.9.5"
     },
     "require-dev":{
         "phpunit/phpunit": "~4.0",
         "symfony/symfony": "~2.7",
-        "jms/serializer-bundle": "~1.0"
+        "jms/serializer-bundle": "~1.0",
+        "goetas/xsd2php":"2.*@dev",
+        "goetas/xsd-reader":"2.*@dev"
     },
     "suggest": {
         "jms/serializer-bundle": "For using as symfony bundle",
