@@ -86,9 +86,17 @@ try {
 }
 ```
 
-Dev only. Updating api model
-----------------------------
+Development
+-----------
+
+### Updating api model
 
 * composer install
 * composer run-script build_rus_post
 * composer run-script build_rus_post_metadata
+
+### Run tests
+
+```
+./vendor/bin/phpunit --config phpunit.xml.dist
+```
