@@ -14,7 +14,7 @@
     "require": {
         "symfony/intl": "~2.7",
         "jms/serializer": "~1.0",
-        "3mg/nusoap": "dev-master",
+        "3mg/nusoap": "0.9.5fix",
         "goetas/xsd2php":"2.*",
         "goetas/xsd-reader":"2.*"
     },
