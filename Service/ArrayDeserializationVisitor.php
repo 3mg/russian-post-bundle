@@ -7,6 +7,10 @@ use JMS\Serializer\Metadata\ClassMetadata;
 use JMS\Serializer\Context;
 use JMS\Serializer\GenericDeserializationVisitor;
 
+/**
+ * Class ArrayDeserializationVisitor
+ * @package a3mg\RussianPostBundle\Service
+ */
 class ArrayDeserializationVisitor extends GenericDeserializationVisitor
 {
     public function visitProperty(PropertyMetadata $metadata, $data, Context $context)

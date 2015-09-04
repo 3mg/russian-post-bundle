@@ -9,6 +9,10 @@ use a3mg\RussianPostBundle\Service\RussianPostApi;
 use a3mg\RussianPostBundle\Service\RussianPostApiFactory;
 use a3mg\RussianPostBundle\Validator\TrackValidator;
 
+/**
+ * Class StandaloneTest
+ * @package a3mg\RussianPostBundle\Tests
+ */
 class StandaloneTest extends \PHPUnit_Framework_TestCase
 {
     public function testTrackValidation()

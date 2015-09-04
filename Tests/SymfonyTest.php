@@ -18,6 +18,10 @@ use Symfony\Component\DependencyInjection\Compiler\ResolveDefinitionTemplatesPas
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\KernelInterface;
 
+/**
+ * Class SymfonyTest
+ * @package a3mg\RussianPostBundle\Tests
+ */
 class SymfonyTest extends \PHPUnit_Framework_TestCase
 {
     public function testApi()

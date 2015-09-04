@@ -3,6 +3,9 @@
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
+/**
+ * Class RussianPostApiTestingAppKernel
+ */
 class RussianPostApiTestingAppKernel extends Kernel
 {
     public function registerBundles()

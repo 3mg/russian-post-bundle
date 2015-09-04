@@ -9,9 +9,8 @@ use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 use Symfony\Component\DependencyInjection\Loader;
 
 /**
- * This is the class that loads and manages your bundle configuration
- *
- * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
+ * Class a3mgRussianPostExtension
+ * @package a3mg\RussianPostBundle\DependencyInjection
  */
 class a3mgRussianPostExtension extends Extension implements PrependExtensionInterface
 {
@@ -50,12 +49,8 @@ class a3mgRussianPostExtension extends Extension implements PrependExtensionInte
                 )
             );
 
-            foreach ($container->getExtensions() as $name => $extension) {
-                switch ($name) {
-                    case 'jms_serializer':
-                        $container->prependExtensionConfig($name, $config);
-                        break;
-                }
+            if ($container->hasExtension('jms_serializer')) {
+                $container->prependExtensionConfig('jms_serializer', $config);
             }
         }
     }
