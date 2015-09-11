@@ -1,0 +1,18 @@
+a3mg\RussianPostBundle\Model\SmsHistoryData:
+    xml_root_name: SmsHistoryData
+    xml_root_namespace: 'http://russianpost.org/sms-info/data'
+    properties:
+        historyRecord:
+            expose: true
+            access_type: public_method
+            serialized_name: historyRecord
+            xml_element:
+                namespace: 'http://russianpost.org/sms-info/data'
+            accessor:
+                getter: getHistoryRecord
+                setter: setHistoryRecord
+            xml_list:
+                inline: true
+                entry_name: historyRecord
+                namespace: 'http://russianpost.org/sms-info/data'
+            type: array<a3mg\RussianPostBundle\Model\SmsHistoryRecordType>

@@ -22,3 +22,13 @@ a3mg\RussianPostBundle\Model\OperationHistoryRequest:
                 getter: getMessageType
                 setter: setMessageType
             type: integer
+        language:
+            expose: true
+            access_type: public_method
+            serialized_name: Language
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getLanguage
+                setter: setLanguage
+            type: string

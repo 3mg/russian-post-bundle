@@ -1,0 +1,83 @@
+a3mg\RussianPostBundle\Model\DataExchangeESPP\PostalOrderEventType:
+    properties:
+        number:
+            expose: true
+            access_type: public_method
+            serialized_name: Number
+            accessor:
+                getter: getNumber
+                setter: setNumber
+            xml_attribute: true
+            type: string
+        eventDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: EventDateTime
+            accessor:
+                getter: getEventDateTime
+                setter: setEventDateTime
+            xml_attribute: true
+            type: Goetas\Xsd\XsdToPhp\XMLSchema\DateTime
+        eventType:
+            expose: true
+            access_type: public_method
+            serialized_name: EventType
+            accessor:
+                getter: getEventType
+                setter: setEventType
+            xml_attribute: true
+            type: integer
+        eventName:
+            expose: true
+            access_type: public_method
+            serialized_name: EventName
+            accessor:
+                getter: getEventName
+                setter: setEventName
+            xml_attribute: true
+            type: string
+        indexTo:
+            expose: true
+            access_type: public_method
+            serialized_name: IndexTo
+            accessor:
+                getter: getIndexTo
+                setter: setIndexTo
+            xml_attribute: true
+            type: integer
+        indexEvent:
+            expose: true
+            access_type: public_method
+            serialized_name: IndexEvent
+            accessor:
+                getter: getIndexEvent
+                setter: setIndexEvent
+            xml_attribute: true
+            type: integer
+        sumPaymentForward:
+            expose: true
+            access_type: public_method
+            serialized_name: SumPaymentForward
+            accessor:
+                getter: getSumPaymentForward
+                setter: setSumPaymentForward
+            xml_attribute: true
+            type: integer
+        countryEventCode:
+            expose: true
+            access_type: public_method
+            serialized_name: CountryEventCode
+            accessor:
+                getter: getCountryEventCode
+                setter: setCountryEventCode
+            xml_attribute: true
+            type: string
+        countryToCode:
+            expose: true
+            access_type: public_method
+            serialized_name: CountryToCode
+            accessor:
+                getter: getCountryToCode
+                setter: setCountryToCode
+            xml_attribute: true
+            type: string

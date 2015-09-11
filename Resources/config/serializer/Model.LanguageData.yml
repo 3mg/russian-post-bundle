@@ -1,0 +1,18 @@
+a3mg\RussianPostBundle\Model\LanguageData:
+    xml_root_name: LanguageData
+    xml_root_namespace: 'http://russianpost.org/sms-info/data'
+    properties:
+        language:
+            expose: true
+            access_type: public_method
+            serialized_name: Language
+            xml_element:
+                namespace: 'http://russianpost.org/sms-info/data'
+            accessor:
+                getter: getLanguage
+                setter: setLanguage
+            xml_list:
+                inline: true
+                entry_name: Language
+                namespace: 'http://russianpost.org/sms-info/data'
+            type: array<a3mg\RussianPostBundle\Model\LanguageData\LanguageAType>

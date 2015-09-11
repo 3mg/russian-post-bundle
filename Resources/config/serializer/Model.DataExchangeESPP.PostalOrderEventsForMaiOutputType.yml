@@ -1,0 +1,16 @@
+a3mg\RussianPostBundle\Model\DataExchangeESPP\PostalOrderEventsForMaiOutputType:
+    properties:
+        postalOrderEvent:
+            expose: true
+            access_type: public_method
+            serialized_name: PostalOrderEvent
+            xml_element:
+                namespace: 'http://www.russianpost.org/RTM/DataExchangeESPP/Data'
+            accessor:
+                getter: getPostalOrderEvent
+                setter: setPostalOrderEvent
+            xml_list:
+                inline: true
+                entry_name: PostalOrderEvent
+                namespace: 'http://www.russianpost.org/RTM/DataExchangeESPP/Data'
+            type: array<a3mg\RussianPostBundle\Model\DataExchangeESPP\PostalOrderEventType>

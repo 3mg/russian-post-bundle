@@ -30,6 +30,16 @@ a3mg\RussianPostBundle\Model\CountryType:
                 getter: getCode3A
                 setter: setCode3A
             type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
         nameRU:
             expose: true
             access_type: public_method

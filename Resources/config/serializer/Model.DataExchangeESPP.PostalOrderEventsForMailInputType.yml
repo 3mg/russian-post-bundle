@@ -1,0 +1,20 @@
+a3mg\RussianPostBundle\Model\DataExchangeESPP\PostalOrderEventsForMailInputType:
+    properties:
+        barcode:
+            expose: true
+            access_type: public_method
+            serialized_name: Barcode
+            accessor:
+                getter: getBarcode
+                setter: setBarcode
+            xml_attribute: true
+            type: string
+        language:
+            expose: true
+            access_type: public_method
+            serialized_name: Language
+            accessor:
+                getter: getLanguage
+                setter: setLanguage
+            xml_attribute: true
+            type: string

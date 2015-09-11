@@ -46,6 +46,7 @@ class StandaloneTest extends \PHPUnit_Framework_TestCase
             $this->assertTrue($object instanceof OperationHistoryData);
             $this->assertGreaterThan(0, count($object->getHistoryRecord()));
         } catch (\Exception $e) {
+            throw $e;
             $this->assertTrue(null === $e); // Always false because exception must not occurs
         }
 

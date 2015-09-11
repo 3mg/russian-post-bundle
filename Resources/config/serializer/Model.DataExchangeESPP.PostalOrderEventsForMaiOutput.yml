@@ -1,0 +1,3 @@
+a3mg\RussianPostBundle\Model\DataExchangeESPP\PostalOrderEventsForMaiOutput:
+    xml_root_name: PostalOrderEventsForMaiOutput
+    xml_root_namespace: 'http://www.russianpost.org/RTM/DataExchangeESPP/Data'

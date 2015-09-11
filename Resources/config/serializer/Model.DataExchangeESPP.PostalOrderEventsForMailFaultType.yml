@@ -1,0 +1,16 @@
+a3mg\RussianPostBundle\Model\DataExchangeESPP\PostalOrderEventsForMailFaultType:
+    properties:
+        postalOrderEventsForMailError:
+            expose: true
+            access_type: public_method
+            serialized_name: PostalOrderEventsForMailError
+            xml_element:
+                namespace: 'http://www.russianpost.org/RTM/DataExchangeESPP/Data'
+            accessor:
+                getter: getPostalOrderEventsForMailError
+                setter: setPostalOrderEventsForMailError
+            xml_list:
+                inline: true
+                entry_name: PostalOrderEventsForMailError
+                namespace: 'http://www.russianpost.org/RTM/DataExchangeESPP/Data'
+            type: array<a3mg\RussianPostBundle\Model\DataExchangeESPP\PostalOrderEventsForMailErrorType>

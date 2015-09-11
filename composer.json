@@ -36,8 +36,14 @@
         }
     },
     "scripts": {
-        "build_rus_post": "xsd2php convert:php 'Resources/xml/russian_post.xsd' --ns-map='http://russianpost.org/operationhistory/data;a3mg/RussianPostBundle/Model/' --ns-dest='a3mg/RussianPostBundle/Model/;Model' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/'",
-        "build_rus_post_metadata": "xsd2php convert:jms-yaml 'Resources/xml/russian_post.xsd' --ns-map='http://russianpost.org/operationhistory/data;a3mg/RussianPostBundle/Model/' --ns-dest='a3mg/RussianPostBundle/;Resources/config/serializer' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/'"
+        "build_rus_post_1": "xsd2php convert:php 'Resources/xml/russian_post.1.xsd' --ns-map='http://www.russianpost.org/RTM/DataExchangeESPP/Data;a3mg/RussianPostBundle/Model/DataExchangeESPP/' --ns-dest='a3mg/RussianPostBundle/Model/DataExchangeESPP/;Model/DataExchangeESPP' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/'",
+        "build_rus_post_2": "xsd2php convert:php 'Resources/xml/russian_post.2.xsd' --ns-map='http://russianpost.org/operationhistory/data;a3mg/RussianPostBundle/Model/' --ns-dest='a3mg/RussianPostBundle/Model/;Model' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/'",
+        "build_rus_post_3": "xsd2php convert:php 'Resources/xml/russian_post.3.xsd' --ns-map='http://russianpost.org/sms-info/data;a3mg/RussianPostBundle/Model/' --ns-dest='a3mg/RussianPostBundle/Model/;Model' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/'",
+        "build_rus_post_4": "xsd2php convert:php 'Resources/xml/russian_post.4.xsd' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/' --ns-dest='a3mg/RussianPostBundle/Model/;Model'",
+        "build_rus_post_metadata_1": "xsd2php convert:jms-yaml 'Resources/xml/russian_post.1.xsd' --ns-map='http://www.russianpost.org/RTM/DataExchangeESPP/Data;a3mg/RussianPostBundle/Model/DataExchangeESPP/' --ns-dest='a3mg/RussianPostBundle/;Resources/config/serializer' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/'",
+        "build_rus_post_metadata_2": "xsd2php convert:jms-yaml 'Resources/xml/russian_post.2.xsd' --ns-map='http://russianpost.org/operationhistory/data;a3mg/RussianPostBundle/Model/' --ns-dest='a3mg/RussianPostBundle/;Resources/config/serializer' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/'",
+        "build_rus_post_metadata_3": "xsd2php convert:jms-yaml 'Resources/xml/russian_post.3.xsd' --ns-map='http://russianpost.org/sms-info/data;a3mg/RussianPostBundle/Model/' --ns-dest='a3mg/RussianPostBundle/;Resources/config/serializer' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/'",
+        "build_rus_post_metadata_4": "xsd2php convert:jms-yaml 'Resources/xml/russian_post.4.xsd' --ns-map='http://schemas.xmlsoap.org/soap/envelope/;a3mg/RussianPostBundle/Model/' --ns-dest='a3mg/RussianPostBundle/;Resources/config/serializer'"
     },
     "minimum-stability": "dev",
     "extra" : {

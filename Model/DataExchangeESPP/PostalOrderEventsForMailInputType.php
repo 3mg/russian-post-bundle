@@ -1,22 +1,20 @@
 <?php
 
-namespace a3mg\RussianPostBundle\Model;
+namespace a3mg\RussianPostBundle\Model\DataExchangeESPP;
 
 /**
- * Class representing OperationHistoryRequest
+ * Class representing PostalOrderEventsForMailInputType
+ *
+ *
+ * XSD Type: PostalOrderEventsForMailInput
  */
-class OperationHistoryRequest
+class PostalOrderEventsForMailInputType
 {
 
     /**
      * @property string $barcode
      */
     private $barcode = null;
-
-    /**
-     * @property integer $messageType
-     */
-    private $messageType = null;
 
     /**
      * @property string $language
@@ -42,28 +40,6 @@ class OperationHistoryRequest
     public function setBarcode($barcode)
     {
         $this->barcode = $barcode;
-        return $this;
-    }
-
-    /**
-     * Gets as messageType
-     *
-     * @return integer
-     */
-    public function getMessageType()
-    {
-        return $this->messageType;
-    }
-
-    /**
-     * Sets a new messageType
-     *
-     * @param integer $messageType
-     * @return self
-     */
-    public function setMessageType($messageType)
-    {
-        $this->messageType = $messageType;
         return $this;
     }
 

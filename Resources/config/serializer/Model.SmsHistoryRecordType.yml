@@ -1,0 +1,92 @@
+a3mg\RussianPostBundle\Model\SmsHistoryRecordType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            xml_element:
+                namespace: 'http://russianpost.org/sms-info/data'
+            accessor:
+                getter: getId
+                setter: setId
+            type: integer
+        number:
+            expose: true
+            access_type: public_method
+            serialized_name: Number
+            xml_element:
+                namespace: 'http://russianpost.org/sms-info/data'
+            accessor:
+                getter: getNumber
+                setter: setNumber
+            type: string
+        notificationTypeID:
+            expose: true
+            access_type: public_method
+            serialized_name: NotificationTypeID
+            xml_element:
+                namespace: 'http://russianpost.org/sms-info/data'
+            accessor:
+                getter: getNotificationTypeID
+                setter: setNotificationTypeID
+            type: integer
+        notificationTypeName:
+            expose: true
+            access_type: public_method
+            serialized_name: NotificationTypeName
+            xml_element:
+                namespace: 'http://russianpost.org/sms-info/data'
+            accessor:
+                getter: getNotificationTypeName
+                setter: setNotificationTypeName
+            type: string
+        notificationStatusID:
+            expose: true
+            access_type: public_method
+            serialized_name: NotificationStatusID
+            xml_element:
+                namespace: 'http://russianpost.org/sms-info/data'
+            accessor:
+                getter: getNotificationStatusID
+                setter: setNotificationStatusID
+            type: integer
+        notificationStatusName:
+            expose: true
+            access_type: public_method
+            serialized_name: NotificationStatusName
+            xml_element:
+                namespace: 'http://russianpost.org/sms-info/data'
+            accessor:
+                getter: getNotificationStatusName
+                setter: setNotificationStatusName
+            type: string
+        notificationStatusDate:
+            expose: true
+            access_type: public_method
+            serialized_name: NotificationStatusDate
+            xml_element:
+                namespace: 'http://russianpost.org/sms-info/data'
+            accessor:
+                getter: getNotificationStatusDate
+                setter: setNotificationStatusDate
+            type: Goetas\Xsd\XsdToPhp\XMLSchema\DateTime
+        sendedID:
+            expose: true
+            access_type: public_method
+            serialized_name: SendedID
+            xml_element:
+                namespace: 'http://russianpost.org/sms-info/data'
+            accessor:
+                getter: getSendedID
+                setter: setSendedID
+            type: integer
+        sourceOperation:
+            expose: true
+            access_type: public_method
+            serialized_name: SourceOperation
+            xml_element:
+                namespace: 'http://russianpost.org/sms-info/data'
+            accessor:
+                getter: getSourceOperation
+                setter: setSourceOperation
+            type: string

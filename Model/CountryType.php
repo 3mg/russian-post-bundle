@@ -27,6 +27,11 @@ class CountryType
     private $code3A = null;
 
     /**
+     * @property string $name
+     */
+    private $name = null;
+
+    /**
      * @property string $nameRU
      */
     private $nameRU = null;
@@ -99,6 +104,28 @@ class CountryType
     public function setCode3A($code3A)
     {
         $this->code3A = $code3A;
+        return $this;
+    }
+
+    /**
+     * Gets as name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Sets a new name
+     *
+     * @param string $name
+     * @return self
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
         return $this;
     }
 

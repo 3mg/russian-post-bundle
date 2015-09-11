@@ -1,0 +1,3 @@
+a3mg\RussianPostBundle\Model\DataExchangeESPP\PostalOrderEventsForMailInput:
+    xml_root_name: PostalOrderEventsForMailInput
+    xml_root_namespace: 'http://www.russianpost.org/RTM/DataExchangeESPP/Data'

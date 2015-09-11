@@ -1,3 +1,0 @@
-a3mg\RussianPostBundle\Model\Header:
-    xml_root_name: Header
-    xml_root_namespace: 'http://schemas.xmlsoap.org/soap/envelope/'

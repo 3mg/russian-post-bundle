@@ -1,0 +1,3 @@
+a3mg\RussianPostBundle\Model\DataExchangeESPP\PostalOrderEventsForMailError:
+    xml_root_name: PostalOrderEventsForMailError
+    xml_root_namespace: 'http://www.russianpost.org/RTM/DataExchangeESPP/Data'

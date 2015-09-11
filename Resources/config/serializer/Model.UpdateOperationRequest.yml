@@ -1,0 +1,3 @@
+a3mg\RussianPostBundle\Model\UpdateOperationRequest:
+    xml_root_name: UpdateOperationRequest
+    xml_root_namespace: 'http://russianpost.org/operationhistory/data'

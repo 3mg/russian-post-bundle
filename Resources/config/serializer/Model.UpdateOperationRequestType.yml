@@ -1,0 +1,62 @@
+a3mg\RussianPostBundle\Model\UpdateOperationRequestType:
+    properties:
+        requestType:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestType
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getRequestType
+                setter: setRequestType
+            type: string
+        sourceOperation:
+            expose: true
+            access_type: public_method
+            serialized_name: SourceOperation
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getSourceOperation
+                setter: setSourceOperation
+            type: a3mg\RussianPostBundle\Model\OperationHistoryRecordType
+        targetOperation:
+            expose: true
+            access_type: public_method
+            serialized_name: TargetOperation
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getTargetOperation
+                setter: setTargetOperation
+            type: a3mg\RussianPostBundle\Model\OperationHistoryRecordType
+        reasonDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: ReasonDescription
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getReasonDescription
+                setter: setReasonDescription
+            type: string
+        initiatorDepartment:
+            expose: true
+            access_type: public_method
+            serialized_name: InitiatorDepartment
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getInitiatorDepartment
+                setter: setInitiatorDepartment
+            type: integer
+        executorIP:
+            expose: true
+            access_type: public_method
+            serialized_name: ExecutorIP
+            xml_element:
+                namespace: 'http://russianpost.org/operationhistory/data'
+            accessor:
+                getter: getExecutorIP
+                setter: setExecutorIP
+            type: string

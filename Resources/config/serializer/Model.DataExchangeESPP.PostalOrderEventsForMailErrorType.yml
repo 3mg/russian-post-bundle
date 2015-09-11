@@ -1,0 +1,11 @@
+a3mg\RussianPostBundle\Model\DataExchangeESPP\PostalOrderEventsForMailErrorType:
+    properties:
+        errorID:
+            expose: true
+            access_type: public_method
+            serialized_name: ErrorID
+            accessor:
+                getter: getErrorID
+                setter: setErrorID
+            xml_attribute: true
+            type: string
