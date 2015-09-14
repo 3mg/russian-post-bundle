@@ -58,4 +58,34 @@ class StandaloneTest extends \PHPUnit_Framework_TestCase
             $this->assertTrue($e instanceof InvalidTrackException);
         }
     }
+
+    public function testItemArrivalDate()
+    {
+        $api = RussianPostApiFactory::createApi("admin", "adminpass");
+
+        try {
+            /** @var OperationHistoryData $object */
+            $object = $api->getTrackOperationHistory("35500489002473", $debug);
+            $arrivalDate = $api->getItemArrivalDate($object);
+            $expectedDate = new \DateTime("2015/08/18");
+            $this->assertEquals($expectedDate->format("Y/m/d"), $arrivalDate->format("Y/m/d"));
+        } catch (\Exception $e) {
+            throw $e;
+        }
+    }
+
+    public function testItemDeliveryDate()
+    {
+        $api = RussianPostApiFactory::createApi("admin", "adminpass");
+
+        try {
+            /** @var OperationHistoryData $object */
+            $object = $api->getTrackOperationHistory("35500489002473", $debug);
+            $deliveryDate = $api->getItemDeliveryDate($object);
+            $expectedDate = new \DateTime("2015/08/28");
+            $this->assertEquals($expectedDate->format("Y/m/d"), $deliveryDate->format("Y/m/d"));
+        } catch (\Exception $e) {
+            throw $e;
+        }
+    }
 }

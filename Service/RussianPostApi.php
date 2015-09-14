@@ -1,6 +1,8 @@
 <?php
 namespace a3mg\RussianPostBundle\Service;
 
+use a3mg\RussianPostBundle\Model\Rtm02Parameter\OperType;
+use a3mg\RussianPostBundle\Model\Rtm02Parameter\ProcessType;
 use a3mg\RussianPostBundle\Validator\TrackValidator;
 use JMS\Serializer\SerializerInterface;
 use a3mg\RussianPostBundle\Exception\RussianPostApiException;
@@ -45,7 +47,7 @@ class RussianPostApi {
         $this->password = $password;
         $this->wsdlEndpoint = $wsdlEndpoint;
     }
-    
+
     public static function createAuthorizationHeader($login, $password, $mustUnderstand = true) {
         $authorizationHeader = new AuthorizationHeader();
         $authorizationHeader->setMustUnderstand($mustUnderstand);
@@ -53,7 +55,7 @@ class RussianPostApi {
         $authorizationHeader->setPassword($password);
         return $authorizationHeader;
     }
-    
+
     public static function createOperationHistoryRequest($barcode, $messageType = 0, $language = "RUS") {
         $historyRequest = new OperationHistoryRequest();
         $historyRequest->setBarcode($barcode);
@@ -81,8 +83,8 @@ class RussianPostApi {
 
         $AuthorizationHeader = self::createAuthorizationHeader($this->login, $this->password);
         $historyRequest = self::createOperationHistoryRequest($track, 0, $language);
-        
-        
+
+
         $parameters = [
             "AuthorizationHeader" => $this->serializer->serialize($AuthorizationHeader, 'array'),
             "historyRequest" => $this->serializer->serialize($historyRequest, 'array'),
@@ -143,12 +145,42 @@ class RussianPostApi {
 
         return $client;
     }
-    
+
+    /**
+     * @param OperationHistoryData $operationHistoryData
+     * @return \DateTime|null
+     */
     public static function getItemArrivalDate (OperationHistoryData $operationHistoryData) {
-        
+        foreach ($operationHistoryData->getHistoryRecord() as $historyRecord) {
+            $parameters = $historyRecord->getOperationParameters();
+            $operType = $parameters->getOperType();
+            $operAttr = $parameters->getOperAttr();
+            $operDate = $parameters->getOperDate();
+
+            if ($operType->getId() == OperType::PROCESSING
+                && $operAttr->getId() == ProcessType::ARRIVED_AT_THE_PLACE_OF_DELIVERY) {
+
+                return $operDate;
+            }
+        }
+        return null;
     }
-    
+
+    /**
+     * @param OperationHistoryData $operationHistoryData
+     * @return \DateTime|null
+     */
     public static function getItemDeliveryDate (OperationHistoryData $operationHistoryData) {
-        
+        foreach ($operationHistoryData->getHistoryRecord() as $historyRecord) {
+            $parameters = $historyRecord->getOperationParameters();
+            $operType = $parameters->getOperType();
+            $operAttr = $parameters->getOperAttr();
+            $operDate = $parameters->getOperDate();
+
+            if ($operType->getId() == OperType::DELIVERY) {
+                return $operDate;
+            }
+        }
+        return null;
     }
 }
