@@ -143,4 +143,12 @@ class RussianPostApi {
 
         return $client;
     }
+    
+    public static function getItemArrivalDate (OperationHistoryData $operationHistoryData) {
+        
+    }
+    
+    public static function getItemDeliveryDate (OperationHistoryData $operationHistoryData) {
+        
+    }
 }

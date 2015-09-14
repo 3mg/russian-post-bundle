@@ -63,7 +63,7 @@ class SymfonyTest extends \PHPUnit_Framework_TestCase
             /** @var OperationHistoryData $object */
             $object = $api->getTrackOperationHistory("RA322481130RU", $debug);
             $this->assertTrue($object instanceof OperationHistoryData);
-            file_put_contents("dump.html", $debug["Request"]."\n".$debug["Response"]);
+            //file_put_contents("dump.html", $debug["Request"]."\n".$debug["Response"]);
             $this->assertGreaterThan(0, count($object->getHistoryRecord()));
         } catch (\Exception $e) {
             throw $e;

@@ -1,0 +1,3305 @@
+{
+    "MailType": {
+        "type": "MailType",
+        "description": "Коды видов отправлений ",
+        "values": [
+            {
+                "name": "Не определено",
+                "code": "0",
+                "translate": "Not determined",
+                "constant": "NOT_DETERMINED",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Бланк почтового перевода",
+                "code": "1",
+                "translate": "Blank postal order",
+                "constant": "POSTAL_ORDER_BLANK",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Письмо",
+                "code": "2",
+                "translate": "Letter",
+                "constant": "LETTER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Бандероль",
+                "code": "3",
+                "translate": "Packet",
+                "constant": "PACKET",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Посылка",
+                "code": "4",
+                "translate": "Parcel",
+                "constant": "PARCEL",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Мелкий пакет",
+                "code": "5",
+                "translate": "Small package",
+                "constant": "SMALL_PACKAGE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Почтовая карточка",
+                "code": "6",
+                "translate": "Postcard",
+                "constant": "POSTCARD",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Отправление EMS",
+                "code": "7",
+                "translate": "EMS items",
+                "constant": "EMS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Секограмма",
+                "code": "8",
+                "translate": "Secograms",
+                "constant": "SECOGRAMS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Мешок «М»",
+                "code": "9",
+                "translate": "Bag \"M\"",
+                "constant": "M_BAG",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Прямой контейнер",
+                "code": "10",
+                "translate": "Straight container",
+                "constant": "DIRECT_CONTAINER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Отправление электронной почты",
+                "code": "11",
+                "translate": "Sending e-mail",
+                "constant": "EMAIL",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Бланк уведомления",
+                "code": "12",
+                "translate": "Blank notice",
+                "constant": "NOTICE_BLANK",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Газетная пачка",
+                "code": "13",
+                "translate": "Newspaper pack",
+                "constant": "NEWSPAPER_PACK",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Сгруппированные отправления «Консигнация»",
+                "code": "14",
+                "translate": "Grouped departure \"Consignment\"",
+                "constant": "GROUPED_DEPARTURE_CONSIGNMENT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Письмо 1 класса",
+                "code": "15",
+                "translate": "Letter 1 class",
+                "constant": "FIRST_CLASS_LETTER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Бандероль 1 класса",
+                "code": "16",
+                "translate": "Parcel 1 class",
+                "constant": "FIRST_CLASS_PARCEL",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Бланк уведомления 1 класса",
+                "code": "17",
+                "translate": "Blank notice 1 class",
+                "constant": "FIRST_CLASS_NOTICE_BLANK",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Сумка страховая",
+                "code": "18",
+                "translate": "Bag Insurance",
+                "constant": "INSURANCE_BAG",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ОВПО - письмо",
+                "code": "19",
+                "translate": "OVPO - email",
+                "constant": "OVPO_LETTER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Мультиконверт",
+                "code": "20",
+                "translate": "Multikonvert",
+                "constant": "MULTI_ENVELOP",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Тяжеловесное почтовое отправление",
+                "code": "21",
+                "translate": "Heavy postal",
+                "constant": "HEAVY_POSTAL",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ОВПО - карточка",
+                "code": "22",
+                "translate": "OVPO - Card",
+                "constant": "OVPO_CARD",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Посылка онлайн",
+                "code": "23",
+                "translate": "Making online",
+                "constant": "ONLINE_PACKAGE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Курьер онлайн",
+                "code": "24",
+                "translate": "Courier online",
+                "constant": "ONLINE_COURIER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Отправление ДМ",
+                "code": "25",
+                "translate": "Administration of DM",
+                "constant": "DIRECT_MAIL",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Пакет ДМ",
+                "code": "26",
+                "translate": "Package DM",
+                "constant": "DIRECT_MAIL_PACKAGE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Посылка стандарт",
+                "code": "27",
+                "translate": "Making standard",
+                "constant": "PACKAGE_STANDARD",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Посылка курьер",
+                "code": "28",
+                "translate": "Sending Courier",
+                "constant": "PACKAGE_COURIER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Посылка экспресс",
+                "code": "29",
+                "translate": "Sending Express",
+                "constant": "PACKAGE_EXPRESS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Бизнес курьер",
+                "code": "30",
+                "translate": "Business Courier",
+                "constant": "BUSINESS_COURIER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Бизнес курьер экспресс",
+                "code": "31",
+                "translate": "Business Courier Express",
+                "constant": "BUSINESS_COURIER_EXPRESS",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "MailCtg": {
+        "type": "MailCtg",
+        "description": "Коды категорий почтовых отправлений ",
+        "values": [
+            {
+                "name": "Простое ",
+                "code": "0",
+                "translate": "Easy",
+                "constant": "NON_REGISTERED",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Заказное",
+                "code": "1",
+                "translate": "Custom",
+                "constant": "REGISTERED",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "С объявленной ценностью",
+                "code": "2",
+                "translate": "With declared value",
+                "constant": "WITH_DECLARED_VALUE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Обыкновенное",
+                "code": "3",
+                "translate": "Ordinary",
+                "constant": "ORDINARY",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "С объявленной ценностью и наложенным платежом",
+                "code": "4",
+                "translate": "Cash-on-delivery with declared value",
+                "constant": "CASH_ON_DELIVERY_WITH_DECLARED_VALUE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Не определена",
+                "code": "5",
+                "translate": "Not determined",
+                "constant": "NOT_DETERMINED",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "С объявленной ценностью и обязательным платежом",
+                "code": "6",
+                "translate": "Obligatory payments with declared value",
+                "constant": "OBLIGATORY_PAYMENTS_WITH_DECLARED_VALUE",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "SendCtg": {
+        "type": "SendCtg",
+        "description": "Коды категорий отправителей ",
+        "values": [
+            {
+                "name": "Население",
+                "code": "1",
+                "translate": "Population",
+                "constant": "PEOPLE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Бюджетная организация",
+                "code": "2",
+                "translate": "State-financed organization",
+                "constant": "STATE_FINANCED_ORGANIZATION",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Хозрасчетная организация",
+                "code": "3",
+                "translate": "Self-financing organization",
+                "constant": "SELF_FINANCING_ORGANIZATION",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Международный оператор",
+                "code": "4",
+                "translate": "International operator",
+                "constant": "INTERNATIONAL_OPERATOR",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Корпоративный клиент",
+                "code": "5",
+                "translate": "Corporate Customer",
+                "constant": "CORPORATE_CUSTOMER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Почтовый оператор",
+                "code": "6",
+                "translate": "Postal operator",
+                "constant": "POSTAL_OPERATOR",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "TransType": {
+        "type": "TransType",
+        "description": "Коды способов пересылки отправления",
+        "values": [
+            {
+                "name": "Наземный",
+                "code": "1",
+                "translate": "Above-ground",
+                "constant": "GROUND",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Авиа",
+                "code": "2",
+                "translate": "Avia",
+                "constant": "AVIA",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Комбинированный",
+                "code": "3",
+                "translate": "Combined",
+                "constant": "COMBINED",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Системой ускоренной почты",
+                "code": "4",
+                "translate": "Express Mail System",
+                "constant": "EXPRESS_MAIL_SYSTEM",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Электронный",
+                "code": "5",
+                "translate": "Electronic",
+                "constant": "ELECTRONIC",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "OperType": {
+        "type": "OperType",
+        "description": "Коды видов операций над отправлением",
+        "values": [
+            {
+                "name": "Прием",
+                "code": "1",
+                "translate": "Acceptance",
+                "constant": "ACCEPTANCE",
+                "relatedAttributeType": "AcceptType"
+            },
+            {
+                "name": "Вручение",
+                "code": "2",
+                "translate": "Delivery",
+                "constant": "DELIVERY",
+                "relatedAttributeType": "IssueType"
+            },
+            {
+                "name": "Возврат",
+                "code": "3",
+                "translate": "Return",
+                "constant": "OP_RETURN",
+                "relatedAttributeType": "RetnReason"
+            },
+            {
+                "name": "Досылка почты",
+                "code": "4",
+                "translate": "Redirectiong",
+                "constant": "REDIRECTING",
+                "relatedAttributeType": "SendAdd"
+            },
+            {
+                "name": "Невручение",
+                "code": "5",
+                "translate": "Non-delivery",
+                "constant": "NON_DELIVERY",
+                "relatedAttributeType": "NonDeliv"
+            },
+            {
+                "name": "Хранение",
+                "code": "6",
+                "translate": "Safekeeping",
+                "constant": "DEPOSIT",
+                "relatedAttributeType": "DeposReasn"
+            },
+            {
+                "name": "Временное хранение",
+                "code": "7",
+                "translate": "Temporary storage",
+                "constant": "TEMPORARY_DEPOSIT",
+                "relatedAttributeType": "DeposTemp"
+            },
+            {
+                "name": "Обработка",
+                "code": "8",
+                "translate": "Processing",
+                "constant": "PROCESSING",
+                "relatedAttributeType": "ProcessType"
+            },
+            {
+                "name": "Импорт международной почты",
+                "code": "9",
+                "translate": "Import of international mail",
+                "constant": "IMPORT_OF_INTERNATIONAL_MAIL",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Экспорт международной почты",
+                "code": "10",
+                "translate": "Export of international mail",
+                "constant": "EXPORT_OF_INTERNATIONAL_MAIL",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Прием на таможню",
+                "code": "11",
+                "translate": "Handed to customs",
+                "constant": "HANDED_TO_CUSTOMS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Неудачная попытка вручения",
+                "code": "12",
+                "translate": "Unsuccessful delivery attempt",
+                "constant": "UNSUCCESSFUL_DELIVERY_ATTEMPT",
+                "relatedAttributeType": "AttemptDeliv"
+            },
+            {
+                "name": "Регистрация отправки",
+                "code": "13",
+                "translate": "Date of sending",
+                "constant": "DATE_OF_SENDING",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Таможенное оформление",
+                "code": "14",
+                "translate": "Customs clearance completed",
+                "constant": "CUSTOMS_CLEARANCE_COMPLETED",
+                "relatedAttributeType": "CustomCompletionCode"
+            },
+            {
+                "name": "Передача на временное хранение",
+                "code": "15",
+                "translate": "Transmission in temporary storage",
+                "constant": "TRANSMISSION_TO_TEMPORARY_DEPOSIT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Уничтожение",
+                "code": "16",
+                "translate": "Destruction",
+                "constant": "DESTRUCTION",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Передача вложения на баланс",
+                "code": "17",
+                "translate": "Transmission investments on the balance sheet",
+                "constant": "TRANSMISSION_INVESTMENTS_ON_THE_BALANCE_SHEET",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Регистрация утраты",
+                "code": "18",
+                "translate": "Register loss",
+                "constant": "REGISTER_LOSS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Таможенные платежи поступили",
+                "code": "19",
+                "translate": "Customs payments received",
+                "constant": "CUSTOMS_PAYMENTS_RECEIVED",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Регистрация",
+                "code": "20",
+                "translate": "Register",
+                "constant": "REGISTER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Доставка",
+                "code": "21",
+                "translate": "Delivering",
+                "constant": "DELIVERING",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Недоставка",
+                "code": "22",
+                "translate": "NDR",
+                "constant": "NDR",
+                "relatedAttributeType": "NonCommit"
+            }
+        ]
+    },
+    "AcceptType": {
+        "type": "AcceptType",
+        "description": "Коды видов приема",
+        "values": [
+            {
+                "name": "Единичный",
+                "code": "1",
+                "translate": "Single",
+                "constant": "SINGLE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Партионный",
+                "code": "2",
+                "translate": "Partional",
+                "constant": "PARTIONAL",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Партионный электронно",
+                "code": "3",
+                "translate": "Partional electronic",
+                "constant": "PARTIONAL_ELECTRONIC",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "IssueType": {
+        "type": "IssueType",
+        "description": "Коды видов вручения",
+        "values": [
+            {
+                "name": "Вручение адресату",
+                "code": "1",
+                "translate": "Delivery to addressee",
+                "constant": "DELIVERY_TO_ADDRESSEE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Вручение отправителю",
+                "code": "2",
+                "translate": "Delivery to sender",
+                "constant": "DELIVERY_TO_SENDER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Выдано адресату через почтомат",
+                "code": "3",
+                "translate": "Delivery to addressee by Postomat",
+                "constant": "DELIVERY_TO_ADDRESSEE_BY_POSTOMAT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Выдано отправителю через почтомат",
+                "code": "4",
+                "translate": "Delivery to sender by Postomat",
+                "constant": "DELIVERY_TO_SENDER_BY_POSTOMAT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Адресату электронно",
+                "code": "5",
+                "translate": "Delivery to addressee electronic",
+                "constant": "DELIVERY_TO_ADDRESSEE_ELECTRONIC",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Адресату почтальоном",
+                "code": "6",
+                "translate": "Delivery to addressee by postman",
+                "constant": "DELIVERY_TO_ADDRESSEE_BY_POSTMAN",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Отправителю почтальоном",
+                "code": "7",
+                "translate": "Delivery to sender by postman",
+                "constant": "DELIVERY_TO_SENDER_BY_POSTMAN",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Адресату курьером",
+                "code": "8",
+                "translate": "Delivery to addressee by courier",
+                "constant": "DELIVERY_TO_ADDRESSEE_BY_COURIER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Отправителю курьером",
+                "code": "9",
+                "translate": "Delivery to sender by courier",
+                "constant": "DELIVERY_TO_SENDER_BY_COURIER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Адресату с контролем ответа",
+                "code": "10",
+                "translate": "Delivery to addressee with response control",
+                "constant": "DELIVERY_TO_ADDRESSEE_WITH_RESPONSE_CONTROL",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Адресату с контролем ответа почтальоном",
+                "code": "11",
+                "translate": "Delivery to addressee with response control by postman",
+                "constant": "DELIVERY_TO_ADDRESSEE_WITH_RESPONSE_CONTROL_BY_POSTMAN",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Адресату с контролем ответа курьером",
+                "code": "12",
+                "translate": "Delivery to addressee with response control by courier",
+                "constant": "DELIVERY_TO_ADDRESSEE_WITH_RESPONSE_CONTROL_BY_COURIER",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "NonDeliv": {
+        "type": "NonDeliv",
+        "description": "Коды причин невручения отправления",
+        "values": [
+            {
+                "name": "Утрачено",
+                "code": "1",
+                "translate": "Lost",
+                "constant": "LOST",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Изъято",
+                "code": "2",
+                "translate": "confiscated",
+                "constant": "CONFISCATED",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Засылка",
+                "code": "3",
+                "translate": "misdirection",
+                "constant": "MISDIRECTION",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Решение таможни",
+                "code": "8",
+                "translate": "Customs Decision",
+                "constant": "CUSTOMS_DECISION",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Доставка по указанному адресу не осуществляется",
+                "code": "9",
+                "translate": "SPECIFIED ADDRESS NOT DELIVER",
+                "constant": "SPECIFIED_ADDRESS_NOT_DELIVER",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "RetnReason": {
+        "type": "RetnReason",
+        "description": "Коды причин возврата",
+        "values": [
+            {
+                "name": "Истек срок хранения",
+                "code": "1",
+                "translate": "Deposit period expired",
+                "constant": "DEPOSIT_PERIOD_EXPIRED",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Заявление отправителя",
+                "code": "2",
+                "translate": "Sender statement",
+                "constant": "SENDER_STATEMENT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Отсутствие адресата по указанному адресу",
+                "code": "3",
+                "translate": "addressee absence",
+                "constant": "ADDRESSEE_ABSENCE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Отказ адресата ",
+                "code": "4",
+                "translate": "addressee disclaimer",
+                "constant": "ADDRESSEE_DISCLAIMER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Смерть адресата",
+                "code": "5",
+                "translate": "addressee death",
+                "constant": "ADDRESSEE_DEATH",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Невозможно прочесть адрес адресата",
+                "code": "6",
+                "translate": "Can not read the destination address",
+                "constant": "CAN_NOT_READ_THE_DESTINATION_ADDRESS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Отказ в выпуске таможней",
+                "code": "7",
+                "translate": "Refusal to issue Customs",
+                "constant": "REFUSAL_TO_ISSUE_CUSTOMS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Адресат, абонирующий абонементный почтовый шкаф, не указан или указан неправильно ",
+                "code": "8",
+                "translate": "Mailbox owner not specified or is incorrect",
+                "constant": "MAILBOX_OWNER_NOT_SPECIFIED_OR_IS_INCORRECT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Иные обстоятельства ",
+                "code": "9",
+                "translate": "Other facts",
+                "constant": "OTHER_FACTS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Неверный адрес",
+                "code": "10",
+                "translate": "Wrong address",
+                "constant": "WRONG_ADDRESS",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "SendAdd": {
+        "type": "SendAdd",
+        "description": "Коды причин досылки почтового отправления",
+        "values": [
+            {
+                "name": "По заявлению пользователя",
+                "code": "1",
+                "translate": "According to the user",
+                "constant": "ACCORDING_TO_THE_USER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Выбытие адресата по новому адресу",
+                "code": "2",
+                "translate": "Disposal of the addressee at the new address",
+                "constant": "DISPOSAL_OF_THE_ADDRESSEE_AT_THE_NEW_ADDRESS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Засылка",
+                "code": "3",
+                "translate": "The sending",
+                "constant": "MISDIRECTION",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "DeposReasn": {
+        "type": "DeposReasn",
+        "description": "Коды причин хранения почтового отправления",
+        "values": [
+            {
+                "name": "До востребования",
+                "code": "1",
+                "translate": "Poste restante",
+                "constant": "POSTE_RESTANTE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "На абонементный ящик",
+                "code": "2",
+                "translate": "In the post office box",
+                "constant": "POST_OFFICE_BOX",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Установленный срок хранения",
+                "code": "3",
+                "translate": "FIXED DEPOSIT PERIOD",
+                "constant": "FIXED_DEPOSIT_PERIOD",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Продление срока хранения по заявлению адресата",
+                "code": "4",
+                "translate": "Extending the shelf life at the request of the recipient",
+                "constant": "EXTENDING_DEPOSIT_PERIOD_BY_RECIPIENT_REQUEST",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Продление срока выпуска таможней",
+                "code": "5",
+                "translate": "Extension of customs release",
+                "constant": "EXTENSION_OF_CUSTOMS_RELEASE",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "DeposTemp": {
+        "type": "DeposTemp",
+        "description": "Коды причин временного хранения почтового отправления",
+        "values": [
+            {
+                "name": "Нероздано",
+                "code": "1",
+                "translate": "Not distributed",
+                "constant": "NEROZDANO",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Невостребовано",
+                "code": "2",
+                "translate": "Unclaimed",
+                "constant": "UNCLAIMED",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Содержимое запрещено к пересылке ",
+                "code": "3",
+                "translate": "Content is prohibited for carriage",
+                "constant": "CONTENT_IS_PROHIBITED_FOR_CARRIAGE",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "ProcessType": {
+        "type": "ProcessType",
+        "description": "Коды видов обработки РПО",
+        "values": [
+            {
+                "name": "Сортировка",
+                "code": "0",
+                "translate": "Sort",
+                "constant": "SORT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Покинуло место приёма",
+                "code": "1",
+                "translate": "Left the acceptance point",
+                "constant": "LEFT_THE_ACCEPTANCE_POINT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Прибыло в место вручения",
+                "code": "2",
+                "translate": "Arrived at the place of delivery",
+                "constant": "ARRIVED_AT_THE_PLACE_OF_DELIVERY",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Прибыло в сортировочный центр",
+                "code": "3",
+                "translate": "Arrived at the sorting center",
+                "constant": "ARRIVED_AT_THE_SORTING_CENTER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Покинуло сортировочный центр",
+                "code": "4",
+                "translate": "Left the sorting center",
+                "constant": "LEFT_THE_SORTING_CENTER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Прибыло в место международного обмена",
+                "code": "5",
+                "translate": "Arrived at international office of exchange",
+                "constant": "ARRIVED_AT_INTERNATIONAL_OFFICE_OF_EXCHANGE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Покинуло место международного обмена",
+                "code": "6",
+                "translate": "Left international office of exchange",
+                "constant": "LEFT_INTERNATIONAL_OFFICE_OF_EXCHANGE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Прибыло в место транзита",
+                "code": "7",
+                "translate": "Arrived at the transition point",
+                "constant": "ARRIVED_AT_THE_TRANSITION_POINT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Покинуло место транзита",
+                "code": "8",
+                "translate": "Left the transition point",
+                "constant": "LEFT_THE_TRANSITION_POINT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Прибыло в почтомат",
+                "code": "9",
+                "translate": "Arrived at the postmat",
+                "constant": "ARRIVED_AT_THE_POSTMAT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Истекает срок хранения в почтомате",
+                "code": "10",
+                "translate": "Expiring postmat storage period",
+                "constant": "EXPIRING_POSTMAT_STORAGE_PERIOD",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Переадресовано в почтомат",
+                "code": "11",
+                "translate": "Forwarded to postmat",
+                "constant": "FORWARDED_TO_POSTMAT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Изъято из почтомата",
+                "code": "12",
+                "translate": "Left the postmat",
+                "constant": "LEFT_THE_POSTMAT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Прибыло на территорию РФ",
+                "code": "13",
+                "translate": "Arrived in the territory of the Russian Federation",
+                "constant": "ARRIVED_IN_THE_TERRITORY_OF_THE_RUSSIAN_FEDERATION",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Прибыло в Центр выдачи посылок",
+                "code": "14",
+                "translate": "Arrived at the issuing center",
+                "constant": "ARRIVED_AT_THE_ISSUING_CENTER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Передано курьеру",
+                "code": "15",
+                "translate": "Handed to courier",
+                "constant": "HANDED_TO_COURIER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Доставлено для вручения электронно",
+                "code": "16",
+                "translate": "Arrived at electronic  place of delivery",
+                "constant": "ARRIVED_AT_ELECTRONIC__PLACE_OF_DELIVERY",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Прибыло в ЦГП",
+                "code": "17",
+                "translate": "Arrivied in CST",
+                "constant": "ARRIVIED_IN_CST",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Передано почтальону",
+                "code": "18",
+                "translate": "Handed to postman",
+                "constant": "HANDED_TO_POSTMAN",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Передача в кладовую хранения",
+                "code": "19",
+                "translate": "Transfer to the pantry storage",
+                "constant": "TRANSFER_TO_THE_PANTRY_STORAGE",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "CustomCompletionCode": {
+        "type": "CustomCompletionCode",
+        "description": "Коды таможенного оформления",
+        "values": [
+            {
+                "name": "Выпущено таможней",
+                "code": "1",
+                "translate": "Released by customs",
+                "constant": "RELEASED_BY_CUSTOMS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Возвращено таможней",
+                "code": "2",
+                "translate": "Returned by Customs",
+                "constant": "RETURNED_BY_CUSTOMS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Осмотрено таможней",
+                "code": "3",
+                "translate": "Inspected by customs",
+                "constant": "INSPECTED_BY_CUSTOMS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Отказ в выпуске",
+                "code": "4",
+                "translate": "Refused by customs",
+                "constant": "REFUSED_BY_CUSTOMS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Направлено с таможенным уведомлением",
+                "code": "5",
+                "translate": "Sent to the customs notification",
+                "constant": "SENT_TO_THE_CUSTOMS_NOTIFICATION",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Направлено с обязательной уплатой таможенных платежей",
+                "code": "6",
+                "translate": "Sent with a mandatory payment of customs duties",
+                "constant": "SENT_WITH_A_MANDATORY_PAYMENT_OF_CUSTOMS_DUTIES",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "PostMark": {
+        "type": "PostMark",
+        "description": "Коды отметок внутренних и международных отправлений",
+        "values": [
+            {
+                "name": "Без отметки ",
+                "code": "0",
+                "translate": "Without note",
+                "constant": "WITHOUT_NOTE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "С простым уведомлением",
+                "code": "1",
+                "translate": "With a simple notification",
+                "constant": "WITH_A_SIMPLE_NOTIFICATION",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "С заказным уведомлением",
+                "code": "2",
+                "translate": "With a registered notice",
+                "constant": "WITH_A_REGISTERED_NOTICE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "С описью",
+                "code": "4",
+                "translate": "With inventory",
+                "constant": "WITH_INVENTORY",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Осторожно (Хрупкая)",
+                "code": "8",
+                "translate": "Caution (Fragile)",
+                "constant": "CAUTION_FRAGILE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Тяжеловесная",
+                "code": "16",
+                "translate": "HEAVYWEIGHT",
+                "constant": "HEAVY_WEIGHT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Крупногабаритная (Громоздкая)",
+                "code": "32",
+                "translate": "The large (bulky)",
+                "constant": "THE_LARGE_BULKY",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "С доставкой (Доставка нарочным)",
+                "code": "64",
+                "translate": "With the delivery (by courier)",
+                "constant": "WITH_THE_DELIVERY_BY_COURIER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Вручить в собственные руки ",
+                "code": "128",
+                "translate": "Hand in their own hands",
+                "constant": "HAND_IN_THEIR_OWN_HANDS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "С документами",
+                "code": "256",
+                "translate": "The documents",
+                "constant": "THE_DOCUMENTS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "С товарами",
+                "code": "512",
+                "translate": "With goods",
+                "constant": "WITH_GOODS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Возврату не подлежит",
+                "code": "1024",
+                "translate": "No return",
+                "constant": "NO_RETURN",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Нестандартная",
+                "code": "2048",
+                "translate": "Custom",
+                "constant": "CUSTOM",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Приграничная",
+                "code": "4096",
+                "translate": "Border",
+                "constant": "BORDER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Застраховано",
+                "code": "8192",
+                "translate": "Insured",
+                "constant": "INSURED",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "С электронным уведомлением",
+                "code": "16384",
+                "translate": "With e-mail alert",
+                "constant": "WITH_E_MAIL_ALERT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Курьер бизнес-экспресс",
+                "code": "32768",
+                "translate": "Business Courier Express",
+                "constant": "BUSINESS_COURIER_EXPRESS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Нестандартная до 10 кг",
+                "code": "65536",
+                "translate": "Custom up to 10 kg",
+                "constant": "CUSTOM_UP_TO_10_KG",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Нестандартная до 20 кг",
+                "code": "131072",
+                "translate": "Custom up to 20 kg",
+                "constant": "CUSTOM_UP_TO_20_KG",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "MailRank": {
+        "type": "MailRank",
+        "description": "Коды разрядов почтового отправления",
+        "values": [
+            {
+                "name": "Без разряда",
+                "code": "0",
+                "translate": "No type",
+                "constant": "NO_TYPE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Правительственное",
+                "code": "1",
+                "translate": "Government",
+                "constant": "GOVERNMENT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Воинское",
+                "code": "2",
+                "translate": "Military",
+                "constant": "MILITARY",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Служебное",
+                "code": "3",
+                "translate": "Office",
+                "constant": "OFFICE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Судебное",
+                "code": "4",
+                "translate": "The court",
+                "constant": "THE_COURT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Президентское",
+                "code": "5",
+                "translate": "Presidential",
+                "constant": "PRESIDENTIAL",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Кредитное",
+                "code": "6",
+                "translate": "Loan",
+                "constant": "LOAN",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "TrаnsCtg": {
+        "type": "TrаnsCtg",
+        "description": "Коды характера пересылки отправления",
+        "values": [
+            {
+                "name": "Обыкновенный",
+                "code": "1",
+                "translate": "Ordinary",
+                "constant": "ORDINARY",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Ускоренный",
+                "code": "2",
+                "translate": "Accelerated",
+                "constant": "ACCELERATED",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "PayType": {
+        "type": "PayType",
+        "description": "Коды способов и форм оплаты услуг почтовой связи",
+        "values": [
+            {
+                "name": "Наличная",
+                "code": "1",
+                "translate": "Cash",
+                "constant": "CASH",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Безналичная",
+                "code": "2",
+                "translate": "Cashless",
+                "constant": "CASHLESS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Бесплатно",
+                "code": "4",
+                "translate": "Free of charge",
+                "constant": "FREE_OF_CHARGE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Пластиковая карта",
+                "code": "8",
+                "translate": "A plastic card",
+                "constant": "A_PLASTIC_CARD",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Государственные знаки почтовой оплаты марками",
+                "code": "16",
+                "translate": "Public signs of postage stamps",
+                "constant": "PUBLIC_SIGNS_OF_POSTAGE_STAMPS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Предоплата (авансовый платеж)",
+                "code": "32",
+                "translate": "Prepayment (advance payment)",
+                "constant": "PREPAYMENT_ADVANCE_PAYMENT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Оплачено международному оператору",
+                "code": "64",
+                "translate": "Paid International operator",
+                "constant": "PAID_INTERNATIONAL_OPERATOR",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Оплачивается получателем",
+                "code": "128",
+                "translate": "Paid by the beneficiary",
+                "constant": "PAID_BY_THE_BENEFICIARY",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Государственные знаки почтовой оплаты  франкирование",
+                "code": "256",
+                "translate": "Of postage stamps franking",
+                "constant": "OF_POSTAGE_STAMPS_FRANKING",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "DirectCtg": {
+        "type": "DirectCtg",
+        "description": "Коды классификации отправления",
+        "values": [
+            {
+                "name": "Внутренняя",
+                "code": "1",
+                "translate": "domestic",
+                "constant": "DOMESTIC",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Международная ",
+                "code": "2",
+                "translate": "International",
+                "constant": "INTERNATIONAL",
+                "relatedAttributeType": "MailDirect"
+            }
+        ]
+    },
+    "AttemptDeliv": {
+        "type": "AttemptDeliv",
+        "description": "Коды причин неудачной попытки вручения",
+        "values": [
+            {
+                "name": "Временное отсутствие адресата",
+                "code": "1",
+                "translate": "The temporary absence of the addressee",
+                "constant": "TEMPORARY_ABSENCE_OF_ADDRESSEE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Доставка отложена по просьбе адресата",
+                "code": "2",
+                "translate": "Delivery delayed at the request of the recipient",
+                "constant": "DELIVERY_DELAYED_BY_RECIPIENT_REQUEST",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Неполный адрес ",
+                "code": "3",
+                "translate": "Incomplete address",
+                "constant": "INCOMPLETE_ADDRESS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Неправильный адрес",
+                "code": "4",
+                "translate": "Wrong address",
+                "constant": "WRONG_ADDRESS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Адресат выбыл",
+                "code": "5",
+                "translate": "Destination retired",
+                "constant": "DESTINATION_RETIRED",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Отказ от получения",
+                "code": "6",
+                "translate": "Refusal of receipt",
+                "constant": "REFUSAL_OF_RECEIPT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Обстоятельства непреодолимой силы",
+                "code": "7",
+                "translate": "Force majeure",
+                "constant": "FORCE_MAJEURE",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Иная",
+                "code": "8",
+                "translate": "Other",
+                "constant": "OTHER",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Адресат заберет отправление сам",
+                "code": "9",
+                "translate": "The recipient will take the administration itself",
+                "constant": "THE_RECIPIENT_WILL_TAKE_THE_ADMINISTRATION_ITSELF",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Нет адресата",
+                "code": "10",
+                "translate": "No recipient",
+                "constant": "NO_RECIPIENT",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "По техническим причинам",
+                "code": "11",
+                "translate": "For technical reasons,",
+                "constant": "TECHNICAL_REASONS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Истек срок хранения в почтомате",
+                "code": "12",
+                "translate": "Outdated storage pochtomate",
+                "constant": "POSTMAT_STORAGE_PERIOD_EXPIRED",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "NonCommit": {
+        "type": "NonCommit",
+        "description": "Коды причин не доставки отправлений ДМ",
+        "values": [
+            {
+                "name": "Отсутствие п\/я",
+                "code": "1",
+                "translate": "Lack of mailbox",
+                "constant": "LACK_OF_MAILBOX",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Отсутствие улицы, дома, квартиры",
+                "code": "2",
+                "translate": "The absence of streets, houses, apartments",
+                "constant": "ABSENCE_OF_STREETS_HOUSES_APARTMENTS",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Несоответствие индекса ОПС выдачи ",
+                "code": "3",
+                "translate": "Mismatch index OPS extradition",
+                "constant": "MISMATCH_INDEX_OPS_EXTRADITION",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Неверный адрес\/адрес не существует",
+                "code": "4",
+                "translate": "Incorrect address \/ address does not exist",
+                "constant": "INCORRECT_ADDRESS",
+                "relatedAttributeType": ""
+            }
+        ]
+    },
+    "MailDirect": {
+        "type": "MailDirect",
+        "description": "Коды стран пересылки почтовых отправлений",
+        "values": [
+            {
+                "name": "АБХАЗИЯ",
+                "code": "895",
+                "translate": "Abkhazia",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АВСТРАЛИЯ",
+                "code": "36",
+                "translate": "AUSTRALIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АВСТРИЯ",
+                "code": "40",
+                "translate": "AUSTRIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АЗЕРБАЙДЖАН",
+                "code": "31",
+                "translate": "AZERBAIJAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АЛБАНИЯ",
+                "code": "8",
+                "translate": "ALBANIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АЛЖИР",
+                "code": "12",
+                "translate": "ALGERIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АНГИЛЬЯ",
+                "code": "660",
+                "translate": "ANGUILLA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АНГОЛА",
+                "code": "24",
+                "translate": "ANGOLA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АНДОРРА",
+                "code": "20",
+                "translate": "ANDORRA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АНТАРКТИКА",
+                "code": "10",
+                "translate": "ANTARCTICA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АНТИГУА И БАРБУДА",
+                "code": "28",
+                "translate": "ANTIGUA AND BARBUDA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АРГЕНТИНА",
+                "code": "32",
+                "translate": "ARGENTINA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АРМЕНИЯ",
+                "code": "51",
+                "translate": "ARMENIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АРУБА",
+                "code": "533",
+                "translate": "ARUBA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "АФГАНИСТАН",
+                "code": "4",
+                "translate": "AFGHANISTAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БАГАМЫ",
+                "code": "44",
+                "translate": "BAHAMAS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БАНГЛАДЕШ",
+                "code": "50",
+                "translate": "BANGLADESH",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БАРБАДОС",
+                "code": "52",
+                "translate": "BARBADOS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БАХРЕЙН",
+                "code": "48",
+                "translate": "BAHRAIN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БЕЛИЗ",
+                "code": "84",
+                "translate": "BELIZE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БЕЛАРУСЬ",
+                "code": "112",
+                "translate": "BELARUS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БЕЛЬГИЯ",
+                "code": "56",
+                "translate": "BELGIUM",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БЕНИН",
+                "code": "204",
+                "translate": "BENIN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БЕРМУДЫ",
+                "code": "60",
+                "translate": "BERMUDA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БОЛГАРИЯ",
+                "code": "100",
+                "translate": "BULGARIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БОЛИВИЯ",
+                "code": "68",
+                "translate": "BOLIVIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БОНЭЙР, СИНТ-ЭСТАТИУС И САБА",
+                "code": "535",
+                "translate": "BONAIRE, SINT EUSTATIUS AND SABA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БОСНИЯ И ГЕРЦЕГОВИНА",
+                "code": "70",
+                "translate": "BOSNIA AND HERZEGOVINA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БОТСВАНА",
+                "code": "72",
+                "translate": "BOTSWANA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БРАЗИЛИЯ",
+                "code": "76",
+                "translate": "BRAZIL",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БРИТАНСКИЕ ВИРГИНСКИЕ ОСТРОВА",
+                "code": "92",
+                "translate": "VIRGIN ISLANDS (BRITISH)",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БРИТАНСКИЕ ТЕРРИТОРИИ В ИНДИЙСКОМ ОКЕАНЕ",
+                "code": "86",
+                "translate": "BRITISH INDIAN OCEAN TERRITOTY",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БРУНЕЙ",
+                "code": "96",
+                "translate": "BRUNEI DARUSSALAM",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БУВЕ ОСТРОВА",
+                "code": "74",
+                "translate": "BOUVET ISLAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БУРКИНА-ФАСО",
+                "code": "854",
+                "translate": "BURKINA FASO",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БУРУНДИ",
+                "code": "108",
+                "translate": "BURUNDI",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "БУТАН",
+                "code": "64",
+                "translate": "BHUTAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ВАНУАТУ",
+                "code": "548",
+                "translate": "VANUATU",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ВАТИКАН",
+                "code": "336",
+                "translate": "VATICAN CITY STATE (HOLY SEE)",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ВЕЛИКОБРИТАНИЯ",
+                "code": "826",
+                "translate": "UNITED KINDOM",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ВЕНГРИЯ",
+                "code": "348",
+                "translate": "HUNGARY",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ВЕНЕСУЭЛА БОЛИВАРИАНСКАЯ РЕСПУБЛИКА",
+                "code": "862",
+                "translate": "VENEZUELA, BOLIVARIAN REPUBLIC OF",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ВИРГИНСКИЕ ОСТРОВА (США)",
+                "code": "850",
+                "translate": "VIRGIN ISLANDS (U.S.)",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "вознесения остров",
+                "code": "906",
+                "translate": "ascension island",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ВОСТОЧНОЕ САМОА",
+                "code": "16",
+                "translate": "AMERICAN SAMOA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ВЬЕТНАМ",
+                "code": "704",
+                "translate": "VIET NAM",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГАБОН",
+                "code": "266",
+                "translate": "GABON",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГАИТИ",
+                "code": "332",
+                "translate": "HAITI",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГАЙАНА",
+                "code": "328",
+                "translate": "GUYANA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГАМБИЯ",
+                "code": "270",
+                "translate": "GAMBIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГАНА",
+                "code": "288",
+                "translate": "GHANA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГВАДЕЛУПА",
+                "code": "312",
+                "translate": "GUADELOUPE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГВАТЕМАЛА",
+                "code": "320",
+                "translate": "GUATEMALA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГВИНЕЯ",
+                "code": "324",
+                "translate": "GUINEA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГВИНЕЯ-БИСАУ",
+                "code": "624",
+                "translate": "GUINEA-BISSAU",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГЕРМАНИЯ",
+                "code": "276",
+                "translate": "GERMANY",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГЕРНСИ",
+                "code": "831",
+                "translate": "GUERNSEY",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГИБРАЛТАР",
+                "code": "292",
+                "translate": "GIBRALTAR",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГОНДУРАС",
+                "code": "340",
+                "translate": "HONDURAS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГОНКОНГ",
+                "code": "344",
+                "translate": "HONK KONG",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГРЕНАДА",
+                "code": "308",
+                "translate": "GRENADA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГРЕНЛАНДИЯ",
+                "code": "304",
+                "translate": "GREENLAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГРЕЦИЯ",
+                "code": "300",
+                "translate": "GREECE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГРУЗИЯ",
+                "code": "268",
+                "translate": "GEORGIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ГУАМ",
+                "code": "316",
+                "translate": "GUAM",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ДАНИЯ",
+                "code": "208",
+                "translate": "DENMARK",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ДЕМОКРАТИЧЕСКАЯ РЕСПУБЛИКА КОНГО",
+                "code": "180",
+                "translate": "DEMOCRATIC REPUBLIC OF THE CONGO",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ДЖЕРСИ",
+                "code": "832",
+                "translate": "JERSEY",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ДЖИБУТИ",
+                "code": "262",
+                "translate": "DJIBOUTI",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ДОМИНИКА",
+                "code": "212",
+                "translate": "DOMINICA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ДОМИНИКАНСКАЯ РЕСПУБЛИКА",
+                "code": "214",
+                "translate": "DOMINICAN REPUBLIC",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЕГИПЕТ",
+                "code": "818",
+                "translate": "EGYPT",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЗАМБИЯ",
+                "code": "894",
+                "translate": "ZAMBIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЗАПАДНАЯ САХАРА",
+                "code": "732",
+                "translate": "WESTERN SAHARA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЗИМБАБВЕ",
+                "code": "716",
+                "translate": "ZIMBABWE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ИЗРАИЛЬ",
+                "code": "376",
+                "translate": "ISRAEL",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ИНДИЯ",
+                "code": "356",
+                "translate": "INDIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ИНДОНЕЗИЯ",
+                "code": "360",
+                "translate": "INDONESIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ИОРДАНИЯ",
+                "code": "400",
+                "translate": "JORDAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ИРАК",
+                "code": "368",
+                "translate": "IRAQ",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ИРАН",
+                "code": "364",
+                "translate": "IRAN (ISLAMIC REPUBLIC OF)",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ИРЛАНДИЯ",
+                "code": "372",
+                "translate": "IRELAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ИСЛАНДИЯ",
+                "code": "352",
+                "translate": "ICELAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ИСПАНИЯ",
+                "code": "724",
+                "translate": "SPAIN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ИТАЛИЯ",
+                "code": "380",
+                "translate": "ITALY",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЙЕМЕН",
+                "code": "887",
+                "translate": "YEMEN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КАБО-ВЕРДЕ",
+                "code": "132",
+                "translate": "CAPE VERDE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КАЗАХСТАН",
+                "code": "398",
+                "translate": "KAZAKHSTAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КАЙМАНОВЫ ОСТРОВА",
+                "code": "136",
+                "translate": "CAYMAN ISLAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КАМБОДЖА",
+                "code": "116",
+                "translate": "CAMBODIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КАМЕРУН",
+                "code": "120",
+                "translate": "CAMEROON",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КАНАДА",
+                "code": "124",
+                "translate": "CANADA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КАТАР",
+                "code": "634",
+                "translate": "QATAR",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КЕНИЯ",
+                "code": "404",
+                "translate": "KENYA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КИПР",
+                "code": "196",
+                "translate": "CYPRUS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КИРГИЗИЯ",
+                "code": "417",
+                "translate": "KYRGYZSTAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КИРИБАТИ",
+                "code": "296",
+                "translate": "KIRIBATI",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КИТАЙ",
+                "code": "156",
+                "translate": "CHINA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КНДР",
+                "code": "408",
+                "translate": "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КОКОС ОСТРОВА",
+                "code": "166",
+                "translate": "COCOS (KEELING) ISLANDS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КОЛУМБИЯ",
+                "code": "170",
+                "translate": "COLOMBIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КОМОРЫ",
+                "code": "174",
+                "translate": "COMOROS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КОРЕЯ",
+                "code": "410",
+                "translate": "KOREA, REPUBLIC OF",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КОСОВО",
+                "code": "914",
+                "translate": "KOSOVO",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КОСТА-РИКА",
+                "code": "188",
+                "translate": "COSTA RICA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КОТ-Д'ИВУАР",
+                "code": "384",
+                "translate": "COTE D'IVOIRE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КУБА",
+                "code": "192",
+                "translate": "CUBA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КУВЕЙТ",
+                "code": "414",
+                "translate": "KUWAIT",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КУКА ОСТРОВА",
+                "code": "184",
+                "translate": "COOK ISLANDS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "КЮРАСАО",
+                "code": "531",
+                "translate": "CURAÇAO",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЛАОС",
+                "code": "418",
+                "translate": "LAO PEOPLE'S DEMOCRATIC REPUBLIC",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЛАТВИЯ",
+                "code": "428",
+                "translate": "LATVIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЛЕСОТО",
+                "code": "426",
+                "translate": "LESOTHO",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЛИБЕРИЯ",
+                "code": "430",
+                "translate": "LIBERIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЛИВАН",
+                "code": "422",
+                "translate": "LEBANON",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЛИВИЯ",
+                "code": "434",
+                "translate": "LIBYAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЛИТВА",
+                "code": "440",
+                "translate": "LITHUANIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЛИХТЕНШТЕЙН",
+                "code": "438",
+                "translate": "LIECHTENSTEIN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЛЮКСЕМБУРГ",
+                "code": "442",
+                "translate": "LUXEMBOURG",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАВРИКИЙ",
+                "code": "480",
+                "translate": "MAURITIUS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАВРИТАНИЯ",
+                "code": "478",
+                "translate": "MAURITANIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАДАГАСКАР",
+                "code": "450",
+                "translate": "MADAGASCAR",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАЙОТТА",
+                "code": "175",
+                "translate": "MAYOTTE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАКАО",
+                "code": "446",
+                "translate": "MACAU",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАКЕДОНИЯ",
+                "code": "807",
+                "translate": "THE FORMER YUGOSLAV REPUBLIC OF MACEDONI",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАЛАВИ",
+                "code": "454",
+                "translate": "MALAWI",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАЛАЙЗИЯ",
+                "code": "458",
+                "translate": "MALAYSIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАЛИ",
+                "code": "466",
+                "translate": "MALI",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАЛЬДИВЫ",
+                "code": "462",
+                "translate": "MALDIVES",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАЛЫЕ ТИХООКЕАНСКИЕ ОТДАЛЕННЫЕ ОСТРОВА СОЕДИНЕННЫХ ШТАТОВ",
+                "code": "581",
+                "translate": "UNITED STATES MINOR OUTLYING ISLANDS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАЛЬТА",
+                "code": "470",
+                "translate": "MALTA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАРОККО",
+                "code": "504",
+                "translate": "MOROCCO",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАРТИНИКА",
+                "code": "474",
+                "translate": "MARTINIQUE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МАРШАЛЛОВЫ ОСТРОВА",
+                "code": "584",
+                "translate": "MARSHALL ISLANDS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МЕКСИКА",
+                "code": "484",
+                "translate": "MEXICO",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МИКРОНЕЗИЯ",
+                "code": "583",
+                "translate": "MICRONESIA (FEDERATED STATES OF)",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МОЗАМБИК",
+                "code": "508",
+                "translate": "MOZAMBIQUE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МОЛДОВА, РЕСПУБЛИКА",
+                "code": "498",
+                "translate": "MOLDOVA, REPUBLIC OF",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МОНАКО",
+                "code": "492",
+                "translate": "MONACO",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МОНГОЛИЯ",
+                "code": "496",
+                "translate": "MONGOLIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МОНТСЕРРАТ",
+                "code": "500",
+                "translate": "MONTSERRAT",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МЬЯНМА",
+                "code": "104",
+                "translate": "MYANMAR",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "МЭН ОСТРОВ",
+                "code": "833",
+                "translate": "isle of man",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "НАМИБИЯ",
+                "code": "516",
+                "translate": "NAMIBIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "НАУРУ",
+                "code": "520",
+                "translate": "NAURU",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "НЕПАЛ",
+                "code": "524",
+                "translate": "NEPAL",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "НИГЕР",
+                "code": "562",
+                "translate": "NIGER",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "НИГЕРИЯ",
+                "code": "566",
+                "translate": "NIGERIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "НИДЕРЛАНДСКИЕ АНТИЛЫ",
+                "code": "530",
+                "translate": "NETHERLANDS ANTILLES",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "НИДЕРЛАНДЫ",
+                "code": "528",
+                "translate": "NETHERLANDS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "НИКАРАГУА",
+                "code": "558",
+                "translate": "NICARAGUA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "НИУЭ",
+                "code": "570",
+                "translate": "NIUE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "НОВАЯ ЗЕЛАНДИЯ",
+                "code": "554",
+                "translate": "NEW ZEALAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "НОВАЯ КАЛЕДОНИЯ",
+                "code": "540",
+                "translate": "NEW CALEDONIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "НОРВЕГИЯ",
+                "code": "578",
+                "translate": "NORWAY",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "НОРФОЛК ОСТРОВ",
+                "code": "574",
+                "translate": "NORFOLK ISLAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ОБЪЕДИНЕННЫЕ АРАБСКИЕ ЭМИРАТЫ",
+                "code": "784",
+                "translate": "UNITED ARAB EMIRATES",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ОМАН",
+                "code": "512",
+                "translate": "OMAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ПАКИСТАН",
+                "code": "586",
+                "translate": "PAKISTAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ПАЛАУ",
+                "code": "585",
+                "translate": "PALAU",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ПАЛЕСТИНА",
+                "code": "275",
+                "translate": "palestinian territory, occupied",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ПАНАМА",
+                "code": "591",
+                "translate": "PANAMA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ПАПУА НОВАЯ ГВИНЕЯ",
+                "code": "598",
+                "translate": "PAPUA NEW GUINEA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ПАРАГВАЙ",
+                "code": "600",
+                "translate": "PARAGUAY",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ПЕРУ",
+                "code": "604",
+                "translate": "PERU",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ПИТКЕРН",
+                "code": "612",
+                "translate": "PITCAIRN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ПОЛЬША",
+                "code": "616",
+                "translate": "POLAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ПОРТУГАЛИЯ",
+                "code": "620",
+                "translate": "PORTUGAL",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ПУЭРТО-РИКО",
+                "code": "630",
+                "translate": "PUERTO RICO",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "РЕСПУБЛИКА КОНГО",
+                "code": "178",
+                "translate": "CONGO REPUBLIC",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "РЕЮНЬОН",
+                "code": "638",
+                "translate": "RÉUNION",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "РОЖДЕСТВА ОСТРОВ",
+                "code": "162",
+                "translate": "CHRISTMAS ISLAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "РОССИЙСКАЯ ФЕДЕРАЦИЯ",
+                "code": "643",
+                "translate": "RUSSIAN FEDERATION",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "РУАНДА",
+                "code": "646",
+                "translate": "RWANDA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "РУМЫНИЯ",
+                "code": "642",
+                "translate": "ROMANIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "САЛЬВАДОР",
+                "code": "222",
+                "translate": "EL SALVADOR",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "САМОА",
+                "code": "882",
+                "translate": "SAMOA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "САН-МАРИНО",
+                "code": "674",
+                "translate": "SAN MARINO",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "САН-ТОМЕ И ПРИНСИПИ",
+                "code": "678",
+                "translate": "SAO TOME AND PRINCIPE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "САУДОВСКАЯ АРАВИЯ",
+                "code": "682",
+                "translate": "SAUDI ARABIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СВАЗИЛЕНД",
+                "code": "748",
+                "translate": "SWAZILAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СВЯТАЯ ЕЛЕНА, ",
+                "code": "654",
+                "translate": "SAINT HELENA, ",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЕВЕРНЫЕ МАРИАНСКИЕ ОСТРОВА",
+                "code": "580",
+                "translate": "NORTHERN MARIANA ISLAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЕЙШЕЛЫ",
+                "code": "690",
+                "translate": "SEYCHELLES",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЕН-БАРТЕЛЕМИ",
+                "code": "652",
+                "translate": "SAINT BARTHELEMY",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЕНЕГАЛ",
+                "code": "686",
+                "translate": "SENEGAL",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЕНТ-МАРТЕН (НИДЕРЛАНДСКАЯ ЧАСТЬ)",
+                "code": "534",
+                "translate": "SINT MAARTEN (DUTCH PART)",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЕН-МАРТЕН (ФРАНЦУЗСКАЯ ЧАСТЬ)",
+                "code": "663",
+                "translate": "SAINT MARTIN (FRENCH PART)",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЕН-ПЬЕР И МИКЕЛОН",
+                "code": "666",
+                "translate": "SAINT PIERRE AND MIQUELON",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЕНТ-ВИНСЕНТ И ГРЕНАДИНЫ",
+                "code": "670",
+                "translate": "SAINT VINCENT AND THE GRENADINES",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЕНТ-КИТТС И НЕВИС",
+                "code": "659",
+                "translate": "SAINT KITTS AND NEVIS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЕНТ-ЛЮСИЯ",
+                "code": "662",
+                "translate": "SAINT LUCIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЕРБИЯ",
+                "code": "688",
+                "translate": "SERBIA ",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СИНГАПУР",
+                "code": "702",
+                "translate": "SINGAPORE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СИРИЙСКАЯ АРАБСКАЯ РЕСПУБЛИКА",
+                "code": "760",
+                "translate": "SYRIAN ARAB REPUBLIC",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЛОВАКИЯ",
+                "code": "703",
+                "translate": "SLOVAKIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЛОВЕНИЯ",
+                "code": "705",
+                "translate": "SLOVENIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СОЕДИНЕННЫЕ ШТАТЫ АМЕРИКИ",
+                "code": "840",
+                "translate": "UNITED STATES",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СОЛОМОНОВЫ ОСТРОВА",
+                "code": "90",
+                "translate": "SOLOMON ISLANDS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СОМАЛИ",
+                "code": "706",
+                "translate": "SOMALIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Страна не определена",
+                "code": "0",
+                "translate": "NOT DETERMINED",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СУДАН",
+                "code": "736",
+                "translate": "SUDAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СУДАН",
+                "code": "729",
+                "translate": "SUDAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СУРИНАМ",
+                "code": "740",
+                "translate": "SURINAME",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "СЬЕРРА-ЛЕОНЕ",
+                "code": "694",
+                "translate": "SIERRA LEONE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТАДЖИКИСТАН",
+                "code": "762",
+                "translate": "TAJIKISTAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТАИЛАНД",
+                "code": "764",
+                "translate": "THAILAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТАЙВАНЬ",
+                "code": "158",
+                "translate": "TAIWAN, PROVINCE OF CHINA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТАНЗАНИЯ",
+                "code": "834",
+                "translate": "TANZANIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТЕРКС И КАЙКОС ОСТРОВА",
+                "code": "796",
+                "translate": "TURKS AND CAICOS ISLANDS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТИМОР-ЛЕСТЕ",
+                "code": "626",
+                "translate": "TIMOR-LESTE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТОГО",
+                "code": "768",
+                "translate": "TOGO",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТОКЕЛАУ",
+                "code": "772",
+                "translate": "TOKELAU",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТОНГА",
+                "code": "776",
+                "translate": "TONGA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТРИНИДАД И ТОБАГО",
+                "code": "780",
+                "translate": "TRINIDAD AND TOBAGO",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТУВАЛУ",
+                "code": "798",
+                "translate": "TUVALU",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТУНИС",
+                "code": "788",
+                "translate": "TUNISIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТУРКМЕНИЯ",
+                "code": "795",
+                "translate": "TURKMENISTAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ТУРЦИЯ",
+                "code": "792",
+                "translate": "TURKEY",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "УГАНДА",
+                "code": "800",
+                "translate": "UGANDA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "УЗБЕКИСТАН",
+                "code": "860",
+                "translate": "UZBEKISTAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "УКРАИНА",
+                "code": "804",
+                "translate": "UKRAINE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "УОЛЛEС И ФУТУНА ОСТРОВА",
+                "code": "876",
+                "translate": "WALLS AND FUTUNA ISLANDS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "УРУГВАЙ",
+                "code": "858",
+                "translate": "URUGUAY",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ФАРЕРСКИЕ ОСТРОВА",
+                "code": "234",
+                "translate": "FAROE ISLANDS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ФИДЖИ",
+                "code": "242",
+                "translate": "FIJI",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ФИЛИППИНЫ",
+                "code": "608",
+                "translate": "PHILIPPINES",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ФИНЛЯНДИЯ",
+                "code": "246",
+                "translate": "FINLAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ФОЛКЛЕНДСКИЕ (МАЛЬВИНСКИЕ) ОСТРОВА",
+                "code": "238",
+                "translate": "FALKLAND ISLANDS (MALVINAS)",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ФРАНЦИЯ",
+                "code": "250",
+                "translate": "FRANCE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ФРАНЦИЯ, МЕТРОПОЛИЯ",
+                "code": "249",
+                "translate": "FRANCE, METROPOLITAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ФРАНЦУЗСКАЯ ГВИАНА",
+                "code": "254",
+                "translate": "FRENCH GUIANA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ФРАНЦУЗСКАЯ ПОЛИНЕЗИЯ",
+                "code": "258",
+                "translate": "FRENCH POLYNESIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ФРАНЦУЗСКИЕ ЮЖНЫЕ ТЕРРИТОРИИ",
+                "code": "260",
+                "translate": "FRENCH SOUTHERN TERRITORIES",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ХЕРД И МАКДОНАЛЬД ОСТРОВА",
+                "code": "334",
+                "translate": "HEARD ISLAND AND MCDONALD ISLAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ХОРВАТИЯ",
+                "code": "191",
+                "translate": "CROATIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЦЕНТРАЛЬНО-АФРИКАНСКАЯ РЕСПУБЛИКА",
+                "code": "140",
+                "translate": "CENTRAL AFRICAN REPUBLIC",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЧАД",
+                "code": "148",
+                "translate": "CHAD",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЧЕРНОГОРИЯ",
+                "code": "499",
+                "translate": "MONTENEGRO",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЧЕШСКАЯ РЕСПУБЛИКА",
+                "code": "203",
+                "translate": "CZECH REPUBLIC",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЧИЛИ",
+                "code": "152",
+                "translate": "CHILE",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЧИЛИ, ПАСХИ ОСТРОВ",
+                "code": "903",
+                "translate": "CHILE, EASTER ISLAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ШВЕЙЦАРИЯ",
+                "code": "756",
+                "translate": "SWITZERLAND",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ШВЕЦИЯ",
+                "code": "752",
+                "translate": "SWEDEN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ШПИЦБЕРГЕН И ЯН-МАЙЕН",
+                "code": "744",
+                "translate": "SVALBARD AND JAN MAYEN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ШРИ ЛАНКА",
+                "code": "144",
+                "translate": "SRI LANKA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЭКВАДОР",
+                "code": "218",
+                "translate": "ECUADOR",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЭКВАТОРИАЛЬНАЯ ГВИНЕЯ",
+                "code": "226",
+                "translate": "EQUATORIAL GUINEA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЭЛАНДСКИЕ ОСТРОВА",
+                "code": "248",
+                "translate": "ALAND ISLANDS",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЭРИТРЕЯ",
+                "code": "232",
+                "translate": "ERITREA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЭСТОНИЯ",
+                "code": "233",
+                "translate": "ESTONIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЭФИОПИЯ",
+                "code": "231",
+                "translate": "ETHIOPIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЮГОСЛАВИЯ²",
+                "code": "891",
+                "translate": "YUGOSLAVIA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЮЖНАЯ ДЖОРДЖИЯ И ЮЖНЫЕ САНДВИЧЕВЫ ОСТРОВА",
+                "code": "239",
+                "translate": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISL",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "Южная Осетия",
+                "code": "896",
+                "translate": "South Ossetia",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЮЖНО-АФРИКАНСКАЯ РЕСПУБЛИКА",
+                "code": "710",
+                "translate": "SOUTH AFRICA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЮЖНЫЙ СУДАН",
+                "code": "728",
+                "translate": "SOUTH SUDAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЯМАЙКА",
+                "code": "388",
+                "translate": "JAMAICA",
+                "constant": "",
+                "relatedAttributeType": ""
+            },
+            {
+                "name": "ЯПОНИЯ",
+                "code": "392",
+                "translate": "JAPAN",
+                "constant": "",
+                "relatedAttributeType": ""
+            }
+        ]
+    }
+}

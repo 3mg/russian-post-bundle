@@ -1,0 +1,541 @@
+Коды видов отправлений 					
+MailType					
+Наименование вида отправления	Код 	Машинный перевод	Константа	Связанный тип атрибута	
+Не определено	0	Not determined	NOT_DETERMINED		
+Бланк почтового перевода	1	Blank postal order	POSTAL_ORDER_BLANK		
+Письмо	2	Letter	LETTER		
+Бандероль	3	Packet	PACKET		
+Посылка	4	Parcel	PARCEL		
+Мелкий пакет	5	Small package	SMALL_PACKAGE		
+Почтовая карточка	6	Postcard	POSTCARD		
+Отправление EMS	7	EMS items	EMS		
+Секограмма	8	Secograms	SECOGRAMS		
+Мешок «М»	9	Bag "M"	M_BAG		
+Прямой контейнер	10	Straight container	DIRECT_CONTAINER		
+Отправление электронной почты	11	Sending e-mail	EMAIL		
+Бланк уведомления	12	Blank notice	NOTICE_BLANK		
+Газетная пачка	13	Newspaper pack	NEWSPAPER_PACK		
+Сгруппированные отправления «Консигнация»	14	Grouped departure "Consignment"	GROUPED_DEPARTURE_CONSIGNMENT		
+Письмо 1 класса	15	Letter 1 class	FIRST_CLASS_LETTER		
+Бандероль 1 класса	16	Parcel 1 class	FIRST_CLASS_PARCEL		
+Бланк уведомления 1 класса	17	Blank notice 1 class	FIRST_CLASS_NOTICE_BLANK		
+Сумка страховая	18	Bag Insurance	INSURANCE_BAG		
+ОВПО - письмо	19	OVPO - email	OVPO_LETTER		
+Мультиконверт	20	Multikonvert	MULTI_ENVELOP		
+Тяжеловесное почтовое отправление	21	Heavy postal	HEAVY_POSTAL		
+ОВПО - карточка	22	OVPO - Card	OVPO_CARD		
+Посылка онлайн	23	Making online	ONLINE_PACKAGE		
+Курьер онлайн	24	Courier online	ONLINE_COURIER		
+Отправление ДМ	25	Administration of DM	DIRECT_MAIL		
+Пакет ДМ	26	Package DM	DIRECT_MAIL_PACKAGE		
+Посылка стандарт	27	Making standard	PACKAGE_STANDARD		
+Посылка курьер	28	Sending Courier	PACKAGE_COURIER		
+Посылка экспресс	29	Sending Express	PACKAGE_EXPRESS		
+Бизнес курьер	30	Business Courier	BUSINESS_COURIER		
+Бизнес курьер экспресс	31	Business Courier Express	BUSINESS_COURIER_EXPRESS		
+					
+Коды категорий почтовых отправлений 					
+MailCtg					
+Наименование категории почтового отправления	Код 				
+Простое 	0	Easy	NON_REGISTERED		
+Заказное	1	Custom	REGISTERED		
+С объявленной ценностью	2	With declared value	WITH_DECLARED_VALUE		
+Обыкновенное	3	Ordinary	ORDINARY		
+С объявленной ценностью и наложенным платежом	4	Cash-on-delivery with declared value	CASH_ON_DELIVERY_WITH_DECLARED_VALUE		
+Не определена	5	Not determined	NOT_DETERMINED		
+С объявленной ценностью и обязательным платежом	6	Obligatory payments with declared value	OBLIGATORY_PAYMENTS_WITH_DECLARED_VALUE		
+					
+Коды категорий отправителей 					
+SendCtg					
+Наименование категории отправителя	Код 				
+Население	1	Population	PEOPLE		
+Бюджетная организация	2	State-financed organization	STATE_FINANCED_ORGANIZATION		
+Хозрасчетная организация	3	Self-financing organization	SELF_FINANCING_ORGANIZATION		
+Международный оператор	4	International operator	INTERNATIONAL_OPERATOR		
+Корпоративный клиент	5	Corporate Customer	CORPORATE_CUSTOMER		
+Почтовый оператор	6	Postal operator	POSTAL_OPERATOR		
+					
+Коды способов пересылки отправления					
+TransType					
+Наименование способа пересылки отправления	Код 				
+Наземный	1	Above-ground	GROUND		
+Авиа	2	Avia	AVIA		
+Комбинированный	3	Combined	COMBINED		
+Системой ускоренной почты	4	Express Mail System	EXPRESS_MAIL_SYSTEM		
+Электронный	5	Electronic	ELECTRONIC		
+					
+Коды видов операций над отправлением					
+OperType					
+Наименование вида операции	Код 				
+Прием	1	Acceptance	ACCEPTANCE	AcceptType	
+Вручение	2	Delivery	DELIVERY	IssueType	
+Возврат	3	Return	OP_RETURN	RetnReason	
+Досылка почты	4	Redirectiong	REDIRECTING	SendAdd	
+Невручение	5	Non-delivery	NON_DELIVERY	NonDeliv	
+Хранение	6	Safekeeping	DEPOSIT	DeposReasn	
+Временное хранение	7	Temporary storage	TEMPORARY_DEPOSIT	DeposTemp	
+Обработка	8	Processing	PROCESSING	ProcessType	
+Импорт международной почты	9	Import of international mail	IMPORT_OF_INTERNATIONAL_MAIL		
+Экспорт международной почты	10	Export of international mail	EXPORT_OF_INTERNATIONAL_MAIL		
+Прием на таможню	11	Handed to customs	HANDED_TO_CUSTOMS		
+Неудачная попытка вручения	12	Unsuccessful delivery attempt	UNSUCCESSFUL_DELIVERY_ATTEMPT	AttemptDeliv	
+Регистрация отправки	13	Date of sending	DATE_OF_SENDING		
+Таможенное оформление	14	Customs clearance completed	CUSTOMS_CLEARANCE_COMPLETED	CustomCompletionCode	
+Передача на временное хранение	15	Transmission in temporary storage	TRANSMISSION_TO_TEMPORARY_DEPOSIT		
+Уничтожение	16	Destruction	DESTRUCTION		
+Передача вложения на баланс	17	Transmission investments on the balance sheet	TRANSMISSION_INVESTMENTS_ON_THE_BALANCE_SHEET		
+Регистрация утраты	18	Register loss	REGISTER_LOSS		
+Таможенные платежи поступили	19	Customs payments received	CUSTOMS_PAYMENTS_RECEIVED		
+Регистрация	20	Register	REGISTER		
+Доставка	21	Delivering	DELIVERING		
+Недоставка	22	NDR	NDR	NonCommit	
+					
+Коды видов приема					
+AcceptType					
+Наименование вида приема	Код 				
+Единичный	1	Single	SINGLE		
+Партионный	2	Partional	PARTIONAL		
+Партионный электронно	3	Partional electronic	PARTIONAL_ELECTRONIC		
+					
+Коды видов вручения					
+IssueType					
+Наименование вида вручения	Код 				
+Вручение адресату	1	Delivery to addressee	DELIVERY_TO_ADDRESSEE		
+Вручение отправителю	2	Delivery to sender	DELIVERY_TO_SENDER		
+Выдано адресату через почтомат	3	Delivery to addressee by Postomat	DELIVERY_TO_ADDRESSEE_BY_POSTOMAT		
+Выдано отправителю через почтомат	4	Delivery to sender by Postomat	DELIVERY_TO_SENDER_BY_POSTOMAT		
+Адресату электронно	5	Delivery to addressee electronic	DELIVERY_TO_ADDRESSEE_ELECTRONIC		
+Адресату почтальоном	6	Delivery to addressee by postman	DELIVERY_TO_ADDRESSEE_BY_POSTMAN		
+Отправителю почтальоном	7	Delivery to sender by postman	DELIVERY_TO_SENDER_BY_POSTMAN		
+Адресату курьером	8	Delivery to addressee by courier	DELIVERY_TO_ADDRESSEE_BY_COURIER		
+Отправителю курьером	9	Delivery to sender by courier	DELIVERY_TO_SENDER_BY_COURIER		
+Адресату с контролем ответа	10	Delivery to addressee with response control	DELIVERY_TO_ADDRESSEE_WITH_RESPONSE_CONTROL		
+Адресату с контролем ответа почтальоном	11	Delivery to addressee with response control by postman	DELIVERY_TO_ADDRESSEE_WITH_RESPONSE_CONTROL_BY_POSTMAN		
+Адресату с контролем ответа курьером	12	Delivery to addressee with response control by courier	DELIVERY_TO_ADDRESSEE_WITH_RESPONSE_CONTROL_BY_COURIER		
+					
+Коды причин невручения отправления					
+NonDeliv					
+Наименование причины невручения	Код 				
+Утрачено	1	Lost	LOST		
+Изъято	2	confiscated	CONFISCATED		
+Засылка	3	misdirection	MISDIRECTION		
+Решение таможни	8	Customs Decision	CUSTOMS_DECISION		
+Доставка по указанному адресу не осуществляется	9	SPECIFIED ADDRESS NOT DELIVER	SPECIFIED_ADDRESS_NOT_DELIVER		
+					
+Коды причин возврата					
+RetnReason					
+Наименование причины возврата	Код 				
+Истек срок хранения	1	Deposit period expired	DEPOSIT_PERIOD_EXPIRED		
+Заявление отправителя	2	Sender statement	SENDER_STATEMENT		
+Отсутствие адресата по указанному адресу	3	addressee absence	ADDRESSEE_ABSENCE		
+Отказ адресата 	4	addressee disclaimer	ADDRESSEE_DISCLAIMER		
+Смерть адресата	5	addressee death	ADDRESSEE_DEATH		
+Невозможно прочесть адрес адресата	6	Can not read the destination address	CAN_NOT_READ_THE_DESTINATION_ADDRESS		
+Отказ в выпуске таможней	7	Refusal to issue Customs	REFUSAL_TO_ISSUE_CUSTOMS		
+Адресат, абонирующий абонементный почтовый шкаф, не указан или указан неправильно 	8	Mailbox owner not specified or is incorrect	MAILBOX_OWNER_NOT_SPECIFIED_OR_IS_INCORRECT		
+Иные обстоятельства 	9	Other facts	OTHER_FACTS		
+Неверный адрес	10	Wrong address	WRONG_ADDRESS		
+					
+Коды причин досылки почтового отправления					
+SendAdd					
+Наименование причины досылки почты	Код 				
+По заявлению пользователя	1	According to the user	ACCORDING_TO_THE_USER		
+Выбытие адресата по новому адресу	2	Disposal of the addressee at the new address	DISPOSAL_OF_THE_ADDRESSEE_AT_THE_NEW_ADDRESS		
+Засылка	3	The sending	MISDIRECTION		
+					
+Коды причин хранения почтового отправления					
+DeposReasn					
+Наименование причины хранения	Код 				
+До востребования	1	Poste restante	POSTE_RESTANTE		
+На абонементный ящик	2	In the post office box	POST_OFFICE_BOX		
+Установленный срок хранения	3	FIXED DEPOSIT PERIOD	FIXED_DEPOSIT_PERIOD		
+Продление срока хранения по заявлению адресата	4	Extending the shelf life at the request of the recipient	EXTENDING_DEPOSIT_PERIOD_BY_RECIPIENT_REQUEST		
+Продление срока выпуска таможней	5	Extension of customs release	EXTENSION_OF_CUSTOMS_RELEASE		
+					
+Коды причин временного хранения почтового отправления					
+DeposTemp					
+Наименование причины временного хранения	Код 				
+Нероздано	1	Not distributed	NEROZDANO		
+Невостребовано	2	Unclaimed	UNCLAIMED		
+Содержимое запрещено к пересылке 	3	Content is prohibited for carriage	CONTENT_IS_PROHIBITED_FOR_CARRIAGE		
+					
+Коды видов обработки РПО					
+ProcessType					
+Наименование вида обработки РПО	Код 				
+Сортировка	0	Sort	SORT		
+Покинуло место приёма	1	Left the acceptance point	LEFT_THE_ACCEPTANCE_POINT		
+Прибыло в место вручения	2	Arrived at the place of delivery	ARRIVED_AT_THE_PLACE_OF_DELIVERY		
+Прибыло в сортировочный центр	3	Arrived at the sorting center	ARRIVED_AT_THE_SORTING_CENTER		
+Покинуло сортировочный центр	4	Left the sorting center	LEFT_THE_SORTING_CENTER		
+Прибыло в место международного обмена	5	Arrived at international office of exchange	ARRIVED_AT_INTERNATIONAL_OFFICE_OF_EXCHANGE		
+Покинуло место международного обмена	6	Left international office of exchange	LEFT_INTERNATIONAL_OFFICE_OF_EXCHANGE		
+Прибыло в место транзита	7	Arrived at the transition point	ARRIVED_AT_THE_TRANSITION_POINT		
+Покинуло место транзита	8	Left the transition point	LEFT_THE_TRANSITION_POINT		
+Прибыло в почтомат	9	Arrived at the postmat	ARRIVED_AT_THE_POSTMAT		
+Истекает срок хранения в почтомате	10	Expiring postmat storage period	EXPIRING_POSTMAT_STORAGE_PERIOD		
+Переадресовано в почтомат	11	Forwarded to postmat	FORWARDED_TO_POSTMAT		
+Изъято из почтомата	12	Left the postmat	LEFT_THE_POSTMAT		
+Прибыло на территорию РФ	13	Arrived in the territory of the Russian Federation	ARRIVED_IN_THE_TERRITORY_OF_THE_RUSSIAN_FEDERATION		
+Прибыло в Центр выдачи посылок	14	Arrived at the issuing center	ARRIVED_AT_THE_ISSUING_CENTER		
+Передано курьеру	15	Handed to courier	HANDED_TO_COURIER		
+Доставлено для вручения электронно	16	Arrived at electronic  place of delivery	ARRIVED_AT_ELECTRONIC__PLACE_OF_DELIVERY		
+Прибыло в ЦГП	17	Arrivied in CST	ARRIVIED_IN_CST		
+Передано почтальону	18	Handed to postman	HANDED_TO_POSTMAN		
+Передача в кладовую хранения	19	Transfer to the pantry storage	TRANSFER_TO_THE_PANTRY_STORAGE		
+					
+Коды таможенного оформления					
+CustomCompletionCode					
+Наименование кода 	Код 				
+Выпущено таможней	1	Released by customs	RELEASED_BY_CUSTOMS		
+Возвращено таможней	2	Returned by Customs	RETURNED_BY_CUSTOMS		
+Осмотрено таможней	3	Inspected by customs	INSPECTED_BY_CUSTOMS		
+Отказ в выпуске	4	Refused by customs	REFUSED_BY_CUSTOMS		
+Направлено с таможенным уведомлением	5	Sent to the customs notification	SENT_TO_THE_CUSTOMS_NOTIFICATION		
+Направлено с обязательной уплатой таможенных платежей	6	Sent with a mandatory payment of customs duties	SENT_WITH_A_MANDATORY_PAYMENT_OF_CUSTOMS_DUTIES		
+					
+Коды отметок внутренних и международных отправлений					
+PostMark					
+Наименование отметки 	Код 				
+Без отметки 	0	Without note	WITHOUT_NOTE		
+С простым уведомлением	1	With a simple notification	WITH_A_SIMPLE_NOTIFICATION		
+С заказным уведомлением	2	With a registered notice	WITH_A_REGISTERED_NOTICE		
+С описью	4	With inventory	WITH_INVENTORY		
+Осторожно (Хрупкая)	8	Caution (Fragile)	CAUTION_FRAGILE		
+Тяжеловесная	16	HEAVYWEIGHT	HEAVY_WEIGHT		
+Крупногабаритная (Громоздкая)	32	The large (bulky)	THE_LARGE_BULKY		
+С доставкой (Доставка нарочным)	64	With the delivery (by courier)	WITH_THE_DELIVERY_BY_COURIER		
+Вручить в собственные руки 	128	Hand in their own hands	HAND_IN_THEIR_OWN_HANDS		
+С документами	256	The documents	THE_DOCUMENTS		
+С товарами	512	With goods	WITH_GOODS		
+Возврату не подлежит	1024	No return	NO_RETURN		
+Нестандартная	2048	Custom	CUSTOM		
+Приграничная	4096	Border	BORDER		
+Застраховано	8192	Insured	INSURED		
+С электронным уведомлением	16384	With e-mail alert	WITH_E_MAIL_ALERT		
+Курьер бизнес-экспресс	32768	Business Courier Express	BUSINESS_COURIER_EXPRESS		
+Нестандартная до 10 кг	65536	Custom up to 10 kg	CUSTOM_UP_TO_10_KG		
+Нестандартная до 20 кг	131072	Custom up to 20 kg	CUSTOM_UP_TO_20_KG		
+					
+Коды разрядов почтового отправления					
+MailRank					
+Наименование разряда почтового отправления	Код 				
+Без разряда	0	No type	NO_TYPE		
+Правительственное	1	Government	GOVERNMENT		
+Воинское	2	Military	MILITARY		
+Служебное	3	Office	OFFICE		
+Судебное	4	The court	THE_COURT		
+Президентское	5	Presidential	PRESIDENTIAL		
+Кредитное	6	Loan	LOAN		
+					
+Коды характера пересылки отправления					
+TrаnsCtg					
+Наименование характера пересылки	Код 				
+Обыкновенный	1	Ordinary	ORDINARY		
+Ускоренный	2	Accelerated	ACCELERATED		
+					
+Коды способов и форм оплаты услуг почтовой связи					
+PayType					
+Наименование формы оплаты	Код 				
+Наличная	1	Cash	CASH		
+Безналичная	2	Cashless	CASHLESS		
+Бесплатно	4	Free of charge	FREE_OF_CHARGE		
+Пластиковая карта	8	A plastic card	A_PLASTIC_CARD		
+Государственные знаки почтовой оплаты марками	16	Public signs of postage stamps	PUBLIC_SIGNS_OF_POSTAGE_STAMPS		
+Предоплата (авансовый платеж)	32	Prepayment (advance payment)	PREPAYMENT_ADVANCE_PAYMENT		
+Оплачено международному оператору	64	Paid International operator	PAID_INTERNATIONAL_OPERATOR		
+Оплачивается получателем	128	Paid by the beneficiary	PAID_BY_THE_BENEFICIARY		
+Государственные знаки почтовой оплаты  франкирование	256	Of postage stamps franking	OF_POSTAGE_STAMPS_FRANKING		
+					
+Коды классификации отправления					
+DirectCtg					
+Наименование классификации	Код 				
+Внутренняя	1	domestic	DOMESTIC		
+Международная 	2	International	INTERNATIONAL	MailDirect	
+					
+Коды причин неудачной попытки вручения					
+AttemptDeliv					
+Наименование причины неудачной попытки вручения	Код 				
+Временное отсутствие адресата	1	The temporary absence of the addressee	TEMPORARY_ABSENCE_OF_ADDRESSEE		
+Доставка отложена по просьбе адресата	2	Delivery delayed at the request of the recipient	DELIVERY_DELAYED_BY_RECIPIENT_REQUEST		
+Неполный адрес 	3	Incomplete address	INCOMPLETE_ADDRESS		
+Неправильный адрес	4	Wrong address	WRONG_ADDRESS		
+Адресат выбыл	5	Destination retired	DESTINATION_RETIRED		
+Отказ от получения	6	Refusal of receipt	REFUSAL_OF_RECEIPT		
+Обстоятельства непреодолимой силы	7	Force majeure	FORCE_MAJEURE		
+Иная	8	Other	OTHER		
+Адресат заберет отправление сам	9	The recipient will take the administration itself	THE_RECIPIENT_WILL_TAKE_THE_ADMINISTRATION_ITSELF		
+Нет адресата	10	No recipient	NO_RECIPIENT		
+По техническим причинам	11	For technical reasons,	TECHNICAL_REASONS		
+Истек срок хранения в почтомате	12	Outdated storage pochtomate	POSTMAT_STORAGE_PERIOD_EXPIRED		
+					
+Коды причин не доставки отправлений ДМ					
+NonCommit					
+Наименование причины неудачной попытки доставки	Код 				
+Отсутствие п/я	1	Lack of mailbox	LACK_OF_MAILBOX		
+Отсутствие улицы, дома, квартиры	2	The absence of streets, houses, apartments	ABSENCE_OF_STREETS_HOUSES_APARTMENTS		
+Несоответствие индекса ОПС выдачи 	3	Mismatch index OPS extradition	MISMATCH_INDEX_OPS_EXTRADITION		
+Неверный адрес/адрес не существует	4	Incorrect address / address does not exist	INCORRECT_ADDRESS		
+					
+Коды стран пересылки почтовых отправлений					
+MailDirect					
+Наименование страны пересылки	Английское наименование страны пересылки	Французское наименование страны пересылки	Alpha2 код	Alpha3 код	Код
+АБХАЗИЯ	Abkhazia	L’Abkhazié	Ab	ABH	895
+АВСТРАЛИЯ	AUSTRALIA	AUSTRALIE	AU	AUS	36
+АВСТРИЯ	AUSTRIA	AUTRICHE	AT	AUT	40
+АЗЕРБАЙДЖАН	AZERBAIJAN	AZERBAIDJAN	AZ	AZE	31
+АЛБАНИЯ	ALBANIA	ALBANIE	AL	ALB	8
+АЛЖИР	ALGERIA	ALGERIE	DZ	DZA	12
+АНГИЛЬЯ	ANGUILLA	ANGUILLA	AI	AIA	660
+АНГОЛА	ANGOLA	ANGOLA	AO	AGO	24
+АНДОРРА	ANDORRA	ANDORRA	AD	AND	20
+АНТАРКТИКА	ANTARCTICA	ANTARCTICA	AQ	ATA	10
+АНТИГУА И БАРБУДА	ANTIGUA AND BARBUDA	ANTIGUA-ET-BARBUDA	AG	ATG	28
+АРГЕНТИНА	ARGENTINA	ARGENTINE	AR	ARG	32
+АРМЕНИЯ	ARMENIA	ARMENIE	AM	ARM	51
+АРУБА	ARUBA	ARUBA	AW	ABW	533
+АФГАНИСТАН	AFGHANISTAN	AFGHANISTAN	AF	AFG	4
+БАГАМЫ	BAHAMAS	BAHAMAS	BS	BHS	44
+БАНГЛАДЕШ	BANGLADESH	BANGLADESH	BD	BGD	50
+БАРБАДОС	BARBADOS	BARBADE	BB	BRB	52
+БАХРЕЙН	BAHRAIN	BAHRAIN	BH	BHR	48
+БЕЛИЗ	BELIZE	BELIZE	BZ	BLZ	84
+БЕЛАРУСЬ	BELARUS	BELARUS	BY	BLR	112
+БЕЛЬГИЯ	BELGIUM	BELGIQUE	BE	BEL	56
+БЕНИН	BENIN	BENIN	BJ	BEN	204
+БЕРМУДЫ	BERMUDA	BERMUDES	BM	BMU	60
+БОЛГАРИЯ	BULGARIA	BULGARIE	BG	BGR	100
+БОЛИВИЯ	BOLIVIA	BOLIVIE	BO	BOL	68
+БОНЭЙР, СИНТ-ЭСТАТИУС И САБА	BONAIRE, SINT EUSTATIUS AND SABA	BONAIRE, SAINT-EUSTACHE ET SABA	BQ	BES	535
+БОСНИЯ И ГЕРЦЕГОВИНА	BOSNIA AND HERZEGOVINA	BOSNIE HERZEGOVINE	BA	BIH	70
+БОТСВАНА	BOTSWANA	BOTSWANA	BW	BWA	72
+БРАЗИЛИЯ	BRAZIL	BRESIL	BR	BRA	76
+БРИТАНСКИЕ ВИРГИНСКИЕ ОСТРОВА	VIRGIN ISLANDS (BRITISH)	VIERGES BRIT. (ILES)	VG	VGM	92
+БРИТАНСКИЕ ТЕРРИТОРИИ В ИНДИЙСКОМ ОКЕАНЕ	BRITISH INDIAN OCEAN TERRITOTY	TERRITOIRE BRITANIQUE DE L'OCEAN INDIEN	IO	IOT	86
+БРУНЕЙ	BRUNEI DARUSSALAM	BRUNEI DARUSSALAM	BN	BRN	96
+БУВЕ ОСТРОВА	BOUVET ISLAND	BOUVET ILES	BV	BVT	74
+БУРКИНА-ФАСО	BURKINA FASO	BURKINA FASO	BF	BFA	854
+БУРУНДИ	BURUNDI	BURUNDI	BI	BDI	108
+БУТАН	BHUTAN	BHOUTAN	BT	BTN	64
+ВАНУАТУ	VANUATU	VANUATU	VU	VUT	548
+ВАТИКАН	VATICAN CITY STATE (HOLY SEE)	VATICAN	VA	VAT	336
+ВЕЛИКОБРИТАНИЯ	UNITED KINDOM	GRANDE BRETAGNE 	GB	GBR	826
+ВЕНГРИЯ	HUNGARY	HONGRIE	HU	HUN	348
+ВЕНЕСУЭЛА БОЛИВАРИАНСКАЯ РЕСПУБЛИКА	VENEZUELA, BOLIVARIAN REPUBLIC OF	VENEZUELA, RÉPUBLIQUE BOLIVARIENNE DU	VE	VEN	862
+ВИРГИНСКИЕ ОСТРОВА (США)	VIRGIN ISLANDS (U.S.)	ILES VIERGES DES ETATS- UNIES D'AMERIQUE	VI	VIR	850
+вознесения остров	ascension island	ile de l'ascension	AC	ASC	906
+ВОСТОЧНОЕ САМОА	AMERICAN SAMOA	ORIENTALES SAMOA	AS	ASM	16
+ВЬЕТНАМ	VIET NAM	VIET NAM	VN	VNM	704
+ГАБОН	GABON	GABON	GA	GAB	266
+ГАИТИ	HAITI	HAITI	HT	HTI	332
+ГАЙАНА	GUYANA	GUYANE	GY	GUY	328
+ГАМБИЯ	GAMBIA	GAMBIE	GM	GMB	270
+ГАНА	GHANA	GHANA	GH	GHA	288
+ГВАДЕЛУПА	GUADELOUPE	GUADELOUPE	GP	GLP	312
+ГВАТЕМАЛА	GUATEMALA	GUATEMALA	GT	GTM	320
+ГВИНЕЯ	GUINEA	GUINEE	GN	GIN	324
+ГВИНЕЯ-БИСАУ	GUINEA-BISSAU	GUINEE-BISSAU	GW	GNB	624
+ГЕРМАНИЯ	GERMANY	ALLEMAGNE	DE	DEU	276
+ГЕРНСИ	GUERNSEY	GUERNESEY	GG	GGY	831
+ГИБРАЛТАР	GIBRALTAR	GIBRALTAR	GI	GIB	292
+ГОНДУРАС	HONDURAS	HONDURAS	HN	HND	340
+ГОНКОНГ	HONK KONG	HONG-KONG	HK	HKG	344
+ГРЕНАДА	GRENADA	GRENADE	GD	GRD	308
+ГРЕНЛАНДИЯ	GREENLAND	GROENLAND	GL	GRL	304
+ГРЕЦИЯ	GREECE	GRECE	GR	GRC	300
+ГРУЗИЯ	GEORGIA	GEORGIE	GE	GEO	268
+ГУАМ	GUAM	GUAM	GU	GUM	316
+ДАНИЯ	DENMARK	DANEMARK	DK	DNK	208
+ДЕМОКРАТИЧЕСКАЯ РЕСПУБЛИКА КОНГО	DEMOCRATIC REPUBLIC OF THE CONGO	REP. DEMOCRATIQUE DE CONGO	CD	ZAR	180
+ДЖЕРСИ	JERSEY	JERSEY	JE	JEY	832
+ДЖИБУТИ	DJIBOUTI	DJIBOUTI	DJ	DJI	262
+ДОМИНИКА	DOMINICA	DOMINIQUE	DM	DMA	212
+ДОМИНИКАНСКАЯ РЕСПУБЛИКА	DOMINICAN REPUBLIC	DOMINICANE (REP.)	DO	DOM	214
+ЕГИПЕТ	EGYPT	EGYPTE	EG	EGY	818
+ЗАМБИЯ	ZAMBIA	ZAMBIE	ZM	ZMB	894
+ЗАПАДНАЯ САХАРА	WESTERN SAHARA	WESTERN SAHARA	EH	ESH	732
+ЗИМБАБВЕ	ZIMBABWE	ZIMBABWE	ZW	ZWE	716
+ИЗРАИЛЬ	ISRAEL	ISRAEL	IL	ISR	376
+ИНДИЯ	INDIA	INDE	IN	IND	356
+ИНДОНЕЗИЯ	INDONESIA	INDONESIE	ID	IDN	360
+ИОРДАНИЯ	JORDAN	JORDANIE	JO	JOR	400
+ИРАК	IRAQ	IRAQ	IQ	IRQ	368
+ИРАН	IRAN (ISLAMIC REPUBLIC OF)	IRAN	IR	IRN	364
+ИРЛАНДИЯ	IRELAND	IRLANDE	IE	IRL	372
+ИСЛАНДИЯ	ICELAND	ISLANDE	IS	ISL	352
+ИСПАНИЯ	SPAIN	ESPAGNE	ES	ESP	724
+ИТАЛИЯ	ITALY	ITALIE	IT	ITA	380
+ЙЕМЕН	YEMEN	YEMEN	YE	YEM	887
+КАБО-ВЕРДЕ	CAPE VERDE	CAP-VERT	CV	CPV	132
+КАЗАХСТАН	KAZAKHSTAN	KAZAKHSTAN	KZ	KAZ	398
+КАЙМАНОВЫ ОСТРОВА	CAYMAN ISLAND	CAYMAN	KY	CYM	136
+КАМБОДЖА	CAMBODIA	CAMBODGE	KH	KHM	116
+КАМЕРУН	CAMEROON	CAMEROUN	CM	CMR	120
+КАНАДА	CANADA	CANADA	CA	CAN	124
+КАТАР	QATAR	QATAR	QA	QAT	634
+КЕНИЯ	KENYA	KENYA	KE	KEN	404
+КИПР	CYPRUS	CHYPRE	CY	CYP	196
+КИРГИЗИЯ	KYRGYZSTAN	KIRGUISTAN	KG	KGZ	417
+КИРИБАТИ	KIRIBATI	KIRIBATI	KI	KIR	296
+КИТАЙ	CHINA	CHINE	CN	CHN	156
+КНДР	KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF	REP. DEM. POP. DE COREE	KP	PRK	408
+КОКОС ОСТРОВА	COCOS (KEELING) ISLANDS	COCOS ILES	CC	CCK	166
+КОЛУМБИЯ	COLOMBIA	COLOMBIE	CO	COL	170
+КОМОРЫ	COMOROS	COMORES	KM	COM	174
+КОРЕЯ	KOREA, REPUBLIC OF	COREE, REP. (COREE DU SUD)	KR	KOR	410
+КОСОВО	KOSOVO	KOSOVO	XZ	-	914
+КОСТА-РИКА	COSTA RICA	COSTA-RICA	CR	CRI	188
+КОТ-Д'ИВУАР	COTE D'IVOIRE	COTE D'IVOIRE	CI	CIV	384
+КУБА	CUBA	CUBA	CU	CUB	192
+КУВЕЙТ	KUWAIT	KUWAIT	KW	KWT	414
+КУКА ОСТРОВА	COOK ISLANDS	ILES COUK	CK	COK	184
+КЮРАСАО	CURAÇAO	CURAÇAO	CW	CUW	531
+ЛАОС	LAO PEOPLE'S DEMOCRATIC REPUBLIC	LAO	LA	LAO	418
+ЛАТВИЯ	LATVIA	LETTONIE	LV	LVA	428
+ЛЕСОТО	LESOTHO	LESOTHO	LS	LSO	426
+ЛИБЕРИЯ	LIBERIA	LIBERIA	LR	LBR	430
+ЛИВАН	LEBANON	LIBAN	LB	LBN	422
+ЛИВИЯ	LIBYAN	LIBYE	LY	LBY	434
+ЛИТВА	LITHUANIA	LITUANIE	LT	LTU	440
+ЛИХТЕНШТЕЙН	LIECHTENSTEIN	LIECHTENSTEIN	LI	LIE	438
+ЛЮКСЕМБУРГ	LUXEMBOURG	LUXEMBOURG	LU	LUX	442
+МАВРИКИЙ	MAURITIUS	MAURICE	MU	MUS	480
+МАВРИТАНИЯ	MAURITANIA	MAURITANIE	MR	MRT	478
+МАДАГАСКАР	MADAGASCAR	MADAGASCAR	MG	MDG	450
+МАЙОТТА	MAYOTTE	MAYOTTE	YT	MYT	175
+МАКАО	MACAU	MACAO	MO	MAC	446
+МАКЕДОНИЯ	THE FORMER YUGOSLAV REPUBLIC OF MACEDONI	MAKEDONIYA	MK	MKD	807
+МАЛАВИ	MALAWI	MALAWI	MW	MWI	454
+МАЛАЙЗИЯ	MALAYSIA	MALAISIE	MY	MYS	458
+МАЛИ	MALI	MALI	ML	MLI	466
+МАЛЬДИВЫ	MALDIVES	MALDIVES	MV	MDV	462
+МАЛЫЕ ТИХООКЕАНСКИЕ ОТДАЛЕННЫЕ ОСТРОВА СОЕДИНЕННЫХ ШТАТОВ	UNITED STATES MINOR OUTLYING ISLANDS	TERRITOIRE SOUS TUTELLE DU PACIFIQUE DES	UM	UMI	581
+МАЛЬТА	MALTA	MALTE	MT	MLT	470
+МАРОККО	MOROCCO	MAROC	MA	MAR	504
+МАРТИНИКА	MARTINIQUE	MARTINUQUE	MQ	MTQ	474
+МАРШАЛЛОВЫ ОСТРОВА	MARSHALL ISLANDS	MARSHALL ILES	MH	MHL	584
+МЕКСИКА	MEXICO	MEXIQUE	MX	MEX	484
+МИКРОНЕЗИЯ	MICRONESIA (FEDERATED STATES OF)	MICRONESIE	FM	FSM	583
+МОЗАМБИК	MOZAMBIQUE	MOZAMBIQUE	MZ	MOZ	508
+МОЛДОВА, РЕСПУБЛИКА	MOLDOVA, REPUBLIC OF	MOLDOVA	MD	MDA	498
+МОНАКО	MONACO	MONACO	MC	MCO	492
+МОНГОЛИЯ	MONGOLIA	MONGOLIE	MN	MNG	496
+МОНТСЕРРАТ	MONTSERRAT	MONTSERRAT	MS	MSR	500
+МЬЯНМА	MYANMAR	MYANMAR	MM	MMR	104
+МЭН ОСТРОВ	isle of man	ile de man	IM	IMN	833
+НАМИБИЯ	NAMIBIA	NAMIBIE	NA	NAM	516
+НАУРУ	NAURU	NAURU	NR	NRU	520
+НЕПАЛ	NEPAL	NÉPAL	NP	NPL	524
+НИГЕР	NIGER	NIGER	NE	NER	562
+НИГЕРИЯ	NIGERIA	NIGÉRIA	NG	NGA	566
+НИДЕРЛАНДСКИЕ АНТИЛЫ	NETHERLANDS ANTILLES	ANTILLES NEDERLANDAISES	AN	ANT	530
+НИДЕРЛАНДЫ	NETHERLANDS	PAYS-BAS	NL	NLD	528
+НИКАРАГУА	NICARAGUA	NICARAGUA	NI	NIC	558
+НИУЭ	NIUE	NIUE	NU	NIU	570
+НОВАЯ ЗЕЛАНДИЯ	NEW ZEALAND	NOUVELLE-ZELANDE	NZ	NZL	554
+НОВАЯ КАЛЕДОНИЯ	NEW CALEDONIA	NOUVELLE-CALEDONIE	NC	NCL	540
+НОРВЕГИЯ	NORWAY	NORVEGE	NO	NOR	578
+НОРФОЛК ОСТРОВ	NORFOLK ISLAND	NORFOLK ILE	NF	NFK	574
+ОБЪЕДИНЕННЫЕ АРАБСКИЕ ЭМИРАТЫ	UNITED ARAB EMIRATES	EMIRATS ARABES UNIS	AE	ARE	784
+ОМАН	OMAN	OMAN	OM	OMN	512
+ПАКИСТАН	PAKISTAN	PAKISTAN	PK	PAK	586
+ПАЛАУ	PALAU	PALAOS	PW	PLW	585
+ПАЛЕСТИНА	palestinian territory, occupied	palestinien occupé territoiŔe	ps	pse	275
+ПАНАМА	PANAMA	PANAMA	PA	PAN	591
+ПАПУА НОВАЯ ГВИНЕЯ	PAPUA NEW GUINEA	PAPOUASIE-NOUVELLE-GUINEE	PG	PNG	598
+ПАРАГВАЙ	PARAGUAY	PARAGUAY	PY	PRY	600
+ПЕРУ	PERU	PEROU	PE	PER	604
+ПИТКЕРН	PITCAIRN	PITCAIRN	PN	PCN	612
+ПОЛЬША	POLAND	POLOGNE	PL	POL	616
+ПОРТУГАЛИЯ	PORTUGAL	PORTUGAL	PT	PRT	620
+ПУЭРТО-РИКО	PUERTO RICO	POUERTO -RICO	PR	PRI	630
+РЕСПУБЛИКА КОНГО	CONGO REPUBLIC	CONGO REPUBLIQUE	CG	COG	178
+РЕЮНЬОН	RÉUNION	RÉUNION	RE	REU	638
+РОЖДЕСТВА ОСТРОВ	CHRISTMAS ISLAND	CHRISTMAS ISLAND	CX	CXR	162
+РОССИЙСКАЯ ФЕДЕРАЦИЯ	RUSSIAN FEDERATION	RUSSIE	RU	RUS	643
+РУАНДА	RWANDA	RWANDA	RW	RWA	646
+РУМЫНИЯ	ROMANIA	ROUMANIE	RO	ROM	642
+САЛЬВАДОР	EL SALVADOR	EL SALVADOR	SV	SLV	222
+САМОА	SAMOA	SAMOA	WS	WSM	882
+САН-МАРИНО	SAN MARINO	SAINT-MARINO	SM	SMR	674
+САН-ТОМЕ И ПРИНСИПИ	SAO TOME AND PRINCIPE	SAO TOME-ET-PRINCIPE	ST	STP	678
+САУДОВСКАЯ АРАВИЯ	SAUDI ARABIA	ARABIE SAOUDITE	SA	SAU	682
+СВАЗИЛЕНД	SWAZILAND	SWAZILAND	SZ	SWZ	748
+СВЯТАЯ ЕЛЕНА, 	SAINT HELENA, 	SAINTE-HÉLÉNE, ASCENSION ET TRISTAN DA CUNHA	SH	SHN	654
+ОСТРОВ ВОЗНЕСЕНИЯ, ТРИСТАН-ДА-КУНЬЯ	ASCENSION AND TRISTAN DA CUNHA				
+СЕВЕРНЫЕ МАРИАНСКИЕ ОСТРОВА	NORTHERN MARIANA ISLAND	NORTHERN MARIANA ISLAND	MP	MNP	580
+СЕЙШЕЛЫ	SEYCHELLES	SEYCHELLES	SC	SYC	690
+СЕН-БАРТЕЛЕМИ	SAINT BARTHELEMY	SAINT-BARTHÉLEMY	BL	BLM	652
+СЕНЕГАЛ	SENEGAL	SENEGAL	SN	SEN	686
+СЕНТ-МАРТЕН (НИДЕРЛАНДСКАЯ ЧАСТЬ)	SINT MAARTEN (DUTCH PART)	SAINT-MARTIN (PARTIE NÉERLANDAISE)	SX	SXM	534
+СЕН-МАРТЕН (ФРАНЦУЗСКАЯ ЧАСТЬ)	SAINT MARTIN (FRENCH PART)	SAINT-MARTIN (PARTIE FRANÇAISE)	MF	MAF	663
+СЕН-ПЬЕР И МИКЕЛОН	SAINT PIERRE AND MIQUELON	SAINT- PIERRE ET MIQUELON	PM	SPM	666
+СЕНТ-ВИНСЕНТ И ГРЕНАДИНЫ	SAINT VINCENT AND THE GRENADINES	SAINT-VINCENT-ET-GRENADINES	VC	VCT	670
+СЕНТ-КИТТС И НЕВИС	SAINT KITTS AND NEVIS	SAINT-KITTS-ET-NEVIS	KN	KNA	659
+СЕНТ-ЛЮСИЯ	SAINT LUCIA	SAINT-LUCIE	LC	LCA	662
+СЕРБИЯ	SERBIA 	SERBIE	RS	SRB	688
+СИНГАПУР	SINGAPORE	SINGAPOUR	SG	SGP	702
+СИРИЙСКАЯ АРАБСКАЯ РЕСПУБЛИКА	SYRIAN ARAB REPUBLIC	SYRIENNE	SY	SYR	760
+СЛОВАКИЯ	SLOVAKIA	R. SLOVAQUE	SK	SVK	703
+СЛОВЕНИЯ	SLOVENIA	SLOVENIA	SI	SVN	705
+СОЕДИНЕННЫЕ ШТАТЫ АМЕРИКИ	UNITED STATES	AMERIQUE (ETATS-UNIS)	US	USA	840
+СОЛОМОНОВЫ ОСТРОВА	SOLOMON ISLANDS	SALOMON (ILES)	SB	SLB	90
+СОМАЛИ	SOMALIA	SOMALIE	SO	SOM	706
+Страна не определена	NOT DETERMINED				0
+СУДАН	SUDAN	SOUDAN	SD	SDN	736
+СУДАН	SUDAN	SOUDAN	SD	SDN	729
+СУРИНАМ	SURINAME	SURINAME	SR	SUR	740
+СЬЕРРА-ЛЕОНЕ	SIERRA LEONE	SIERRA LEONE	SL	SLE	694
+ТАДЖИКИСТАН	TAJIKISTAN	TADJIKISTAN	TJ	TJK	762
+ТАИЛАНД	THAILAND	THAILANDE	TH	THA	764
+ТАЙВАНЬ	TAIWAN, PROVINCE OF CHINA	TAIWAN	TW	TWN	158
+ТАНЗАНИЯ	TANZANIA	TANZANIE	TZ	TZA	834
+ТЕРКС И КАЙКОС ОСТРОВА	TURKS AND CAICOS ISLANDS	TURQUES ET CAIQUES ILES	TC	TCA	796
+ТИМОР-ЛЕСТЕ	TIMOR-LESTE	TIMOR-LESTE	TL	TLS	626
+ТОГО	TOGO	TOGO	TG	TGO	768
+ТОКЕЛАУ	TOKELAU	TOKELAU	TK	TKL	772
+ТОНГА	TONGA	TONGA	TO	TON	776
+ТРИНИДАД И ТОБАГО	TRINIDAD AND TOBAGO	TRINITE-ET-TOBAGO	TT	TTO	780
+ТУВАЛУ	TUVALU	TUVALU	TV	TUV	798
+ТУНИС	TUNISIA	TUNISIE	TN	TUN	788
+ТУРКМЕНИЯ	TURKMENISTAN	TOURKMENISTAN	TM	TKM	795
+ТУРЦИЯ	TURKEY	TURQUIE	TR	TUR	792
+УГАНДА	UGANDA	OUGANDA	UG	UGA	800
+УЗБЕКИСТАН	UZBEKISTAN	OUZBEKISTAN	UZ	UZB	860
+УКРАИНА	UKRAINE	UKRAINE	UA	UKR	804
+УОЛЛEС И ФУТУНА ОСТРОВА	WALLS AND FUTUNA ISLANDS	WALLIS ET FUTUNE 	WF	WLF	876
+УРУГВАЙ	URUGUAY	URUGUAY	UY	URY	858
+ФАРЕРСКИЕ ОСТРОВА	FAROE ISLANDS	FAROE (ILES)	FO	FRO	234
+ФИДЖИ	FIJI	FIDJI	FJ	FJI	242
+ФИЛИППИНЫ	PHILIPPINES	PHILIPPINES	PH	PHL	608
+ФИНЛЯНДИЯ	FINLAND	FINLANDE	FI	FIN	246
+ФОЛКЛЕНДСКИЕ (МАЛЬВИНСКИЕ) ОСТРОВА	FALKLAND ISLANDS (MALVINAS)	FALKLAND (MALVINAIS)	FK	FLK	238
+ФРАНЦИЯ	FRANCE	FRANCE	FR	FRA	250
+ФРАНЦИЯ, МЕТРОПОЛИЯ	FRANCE, METROPOLITAN	FRANCE, METROPOLITAN	FX	FXX	249
+ФРАНЦУЗСКАЯ ГВИАНА	FRENCH GUIANA	GUYAHE FRANSAISE	GF	GUF	254
+ФРАНЦУЗСКАЯ ПОЛИНЕЗИЯ	FRENCH POLYNESIA	POLYNESIE FRANCAISE	PF	PYF	258
+ФРАНЦУЗСКИЕ ЮЖНЫЕ ТЕРРИТОРИИ	FRENCH SOUTHERN TERRITORIES	TERRES AUSTRALES FRANÇAISES	TF	ATF	260
+ХЕРД И МАКДОНАЛЬД ОСТРОВА	HEARD ISLAND AND MCDONALD ISLAND	HEARD ISLAND  AND MCDONALD ISLAND	HM	HMD	334
+ХОРВАТИЯ	CROATIA	CROATIE	HR	HRV	191
+ЦЕНТРАЛЬНО-АФРИКАНСКАЯ РЕСПУБЛИКА	CENTRAL AFRICAN REPUBLIC	CENTRAFRIQUE	CF	CAF	140
+ЧАД	CHAD	TCHAD	TD	TCD	148
+ЧЕРНОГОРИЯ	MONTENEGRO	MONTÉNÉGRO	ME	MNE	499
+ЧЕШСКАЯ РЕСПУБЛИКА	CZECH REPUBLIC	R. TCHEQUE	CZ	CZE	203
+ЧИЛИ	CHILE	CHILI	CL	CHL	152
+ЧИЛИ, ПАСХИ ОСТРОВ	CHILE, EASTER ISLAND	CHILI, ILES DE PAQUES	C1		903
+ШВЕЙЦАРИЯ	SWITZERLAND	SUISSE	CH	CHE	756
+ШВЕЦИЯ	SWEDEN	SUEDE	SE	SWE	752
+ШПИЦБЕРГЕН И ЯН-МАЙЕН	SVALBARD AND JAN MAYEN	SVALBARD AND JAN MAYEN	SJ	SJM	744
+ШРИ ЛАНКА	SRI LANKA	SRI LANKA	LK	LKA	144
+ЭКВАДОР	ECUADOR	EQUATEUR	EC	ECU	218
+ЭКВАТОРИАЛЬНАЯ ГВИНЕЯ	EQUATORIAL GUINEA	GUINEE-EQUATORIALE	GQ	GNQ	226
+ЭЛАНДСКИЕ ОСТРОВА	ALAND ISLANDS	ALAND, ÎLES	AX	ALA	248
+ЭРИТРЕЯ	ERITREA	ERYTHREE	ER	ERI	232
+ЭСТОНИЯ	ESTONIA	ESTONIE	EE	EST	233
+ЭФИОПИЯ	ETHIOPIA	ETHIOPIE	ET	ETH	231
+ЮГОСЛАВИЯ²	YUGOSLAVIA	YOUGOSLAVIE	YU	YUG	891
+ЮЖНАЯ ДЖОРДЖИЯ И ЮЖНЫЕ САНДВИЧЕВЫ ОСТРОВА	SOUTH GEORGIA AND THE SOUTH SANDWICH ISL	GEORGIE DU SUD ET SAINDWICH DU SUD	GS	SGS	239
+Южная Осетия	South Ossetia	D’Ossetie du Sud	os	OST	896
+ЮЖНО-АФРИКАНСКАЯ РЕСПУБЛИКА	SOUTH AFRICA	AFRIQUE DU SUD	ZA	ZAF	710
+ЮЖНЫЙ СУДАН	SOUTH SUDAN	SOUDAN DU SUD	SS	SSD	728
+ЯМАЙКА	JAMAICA	JAMAIQUE	JM	JAM	388
+ЯПОНИЯ	JAPAN	JAPON	JP	JPN	392
