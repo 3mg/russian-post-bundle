@@ -42,17 +42,17 @@ while (($csvObject = fgetcsv($fh, 1000, "\t")) !== false) {
     }
     
     $attributes[$currentAttributeType]["values"][] = [
-        "name" => $name,
+        "name" => addslashes($name),
         "code" => $code,
-        "translate" => $translate,
+        "translate" => addslashes($translate),
         "constant" => $constant,
-        "relatedAttributeType" => $relatedAttributeType,
+        "relatedAttributeType" => addslashes($relatedAttributeType),
     ];
 }
 
 while (($csvObject = fgetcsv($fh, 1000, "\t")) !== false) {
-    $name_ru = $csvObject[0];
     $name_en = $csvObject[1];
+    $name_ru = $csvObject[0];
     $name_fr = $csvObject[2];
     $alpha2 = $csvObject[3];
     $alpha3 = $csvObject[4];
@@ -62,11 +62,18 @@ while (($csvObject = fgetcsv($fh, 1000, "\t")) !== false) {
         continue;
     }
     
+    $translation = $name_en ?: $name_fr;
+    $constant = strtoupper(preg_replace("/[^A-Za-z]/", "_", preg_replace("/[(),]/", "", $translation)));
+    
+    if ($code == 729) {// SUDAN DUPLICATE
+        $constant .= "_729";
+    }
+    
     $attributes[$currentAttributeType]["values"][] = [
-        "name" => $name_ru,
+        "name" => addslashes($name_ru),
         "code" => $code,
-        "translate" => $name_en ?: $name_fr,
-        "constant" => strtoupper(preg_replace("/[^A-Za-z]/", preg_replace("/[(),]/", $name_en, ""), "_")),
+        "translate" => addslashes($translation),
+        "constant" => $constant,
         "relatedAttributeType" => "",
     ];
 }
